@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
+disableLanguages = ["fr","zh"]
 
 title = "Security Frameworks by David Rowe"
 theme = "learn"

@@ -46,18 +46,18 @@ The basic outline for starting the deployment buckets the security items into se
 
 ---
 ## [The First 30 Days]({{%relref "redforest/first30/_index.md" %}})
-[![ESAE Phase 1 zero risk of operational downtime](</en/redforest/images/First30Days.png?classes=shadow>)](first30/)
+[![ESAE Phase 1 zero risk of operational downtime](</redforest/images/First30Days.png?classes=shadow>)](first30/)
 ## [90 Days]({{%relref "redforest/90days/_index.md" %}})
 
-![ESAE Phase 2 single investments leads to significant positive impact](</en/redforest/images/First 90 Days.png?classes=shadow>)
+![ESAE Phase 2 single investments leads to significant positive impact](</redforest/images/First 90 Days.png?classes=shadow>)
 ## [Beyond 90 Days]({{%relref "redforest/beyond90/_index.md" %}})
 
-![ESAE Phase 3 build meaningful active directory security resilience from long term threats](</en/redforest/images/Beyond 90.png?classes=shadow>)
+![ESAE Phase 3 build meaningful active directory security resilience from long term threats](</redforest/images/Beyond 90.png?classes=shadow>)
 
 ---
 ### Starting Microsoft's Phased Approach
 
-[![Roadmap to ESAE](</en/redforest/images/Roadmap First 30 and 90 Days.png?classes=shadow>)](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
+[![Roadmap to ESAE](</redforest/images/Roadmap First 30 and 90 Days.png?classes=shadow>)](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
 ---
 
 {{< subcontent "/redforest/Phase1/_index.md" >}}
