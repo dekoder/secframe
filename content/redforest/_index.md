@@ -46,7 +46,7 @@ The basic outline for starting the deployment buckets the security items into se
 
 ---
 ## [The First 30 Days]({{%relref "redforest/first30/_index.md" %}})
-[![ESAE Phase 1 zero risk of operational downtime](</en/redforest/images/First 30 Days.png?classes=shadow>)](first30/)
+[![ESAE Phase 1 zero risk of operational downtime](</en/redforest/images/First30Days.png?classes=shadow>)](first30/)
 ## [90 Days]({{%relref "redforest/90days/_index.md" %}})
 
 ![ESAE Phase 2 single investments leads to significant positive impact](</en/redforest/images/First 90 Days.png?classes=shadow>)
