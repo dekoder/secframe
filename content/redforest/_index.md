@@ -12,19 +12,15 @@ chapter: true
 
 ESAE is [Microsoft’s complete framework](https://social.technet.microsoft.com/wiki/contents/articles/37509.active-directory-red-forest-design-aka-enhanced-security-administrative-environment-esae.aspx) to protect Active Directory (AD). AD, in short, is the identity and access management tool in your business network that holds passwords, credentials, users, computers, groups. AD controls your access to resources across your network; 
 
-* Information and Applications
-* Privileged Credentials
-* Resources and Servers
+| Information and Applications | Privileged Credentials | Resources and Servers |
+| ---------------------------- | ---------------------- | --------------------- |
+
 
 {{% notice info %}}
-The first push for and conference presentation that I could find that talks about ESAE, is from an RSA conference from February in 2017 [Critical Hygiene for Preventing Major Breaches](https://www.rsaconference.com/usa/us-2017/agenda/critical-hygiene-for-preventing-major-breaches)
-
-[Presentation PDF download](https://published-prd.lanyonevents.com/published/rsaus17/sessionsFiles/3774/CXO-F02-Critical-Hygiene-for-Preventing-Major-Breaches.pdf)
+The conference presentation that I could find that talks about ESAE, is from an RSA conference from February in 2017 [Critical Hygiene for Preventing Major Breaches](https://www.rsaconference.com/usa/us-2017/agenda/critical-hygiene-for-preventing-major-breaches) ::: [Presentation PDF download](https://published-prd.lanyonevents.com/published/rsaus17/sessionsFiles/3774/CXO-F02-Critical-Hygiene-for-Preventing-Major-Breaches.pdf)
 {{% /notice %}}
 
 Deploying ESAE is a foundation for a long term identity security solution.  Below is a timeline provided by Microsoft to deploy this security structure.
-
-![ESAE Overview](/en/redforest/images/ESAE_Methodology.jpg?classes=shadow)
 
 ### Information
 
@@ -47,10 +43,27 @@ Microsoft open-sourced much of the documentation for deploying the architecture.
 {{% notice info %}}
 The basic outline for starting the deployment buckets the security items into sections via deployment time. The three buckets outlined are; The First 30 days, 90 days, and Beyond 90 days.
 {{% /notice %}}
-* [The First 30 Days]({{%relref "redforest/first30/_index.md" %}})
-* [90 Days]({{%relref "redforest/90days/_index.md" %}})
-* [Beyond 90 Days]({{%relref "redforest/beyond90/_index.md" %}})
 
-{{< subcontent "/redforest/first30/_index.md" >}}
+---
+## [The First 30 Days]({{%relref "redforest/first30/_index.md" %}})
+[![ESAE Phase 1 zero risk of operational downtime](</en/redforest/images/First 30 Days.png?classes=shadow>)](first30/)
+## [90 Days]({{%relref "redforest/90days/_index.md" %}})
 
-does this show up down here?
+![ESAE Phase 2 single investments leads to significant positive impact](</en/redforest/images/First 90 Days.png?classes=shadow>)
+## [Beyond 90 Days]({{%relref "redforest/beyond90/_index.md" %}})
+
+![ESAE Phase 3 build meaningful active directory security resilience from long term threats](</en/redforest/images/Beyond 90.png?classes=shadow>)
+
+---
+### Starting Microsoft's Phased Approach
+
+[![Roadmap to ESAE](</en/redforest/images/Roadmap First 30 and 90 Days.png?classes=shadow>)](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
+---
+
+{{< subcontent "/redforest/Phase1/_index.md" >}}
+---
+
+{{< subcontent "/redforest/Phase2/_index.md" >}}
+---
+
+{{< subcontent "/redforest/Phase3/_index.md" >}}
