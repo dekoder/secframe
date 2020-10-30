@@ -1,0 +1,56 @@
+---
+title: Red Forest
+weight: 5
+pre: "<b>1. </b>"
+chapter: true
+---
+### Chapter 1
+
+# What is Microsoft's ESAE and Red Forest?
+
+## The Enhanced Security Administrative Environment
+
+ESAE is [Microsoft’s complete framework](https://social.technet.microsoft.com/wiki/contents/articles/37509.active-directory-red-forest-design-aka-enhanced-security-administrative-environment-esae.aspx) to protect Active Directory (AD). AD, in short, is the identity and access management tool in your business network that holds passwords, credentials, users, computers, groups. AD controls your access to resources across your network; 
+
+* Information and Applications
+* Privileged Credentials
+* Resources and Servers
+
+{{% notice info %}}
+The first push for and conference presentation that I could find that talks about ESAE, is from an RSA conference from February in 2017 [Critical Hygiene for Preventing Major Breaches](https://www.rsaconference.com/usa/us-2017/agenda/critical-hygiene-for-preventing-major-breaches)
+
+[Presentation PDF download](https://published-prd.lanyonevents.com/published/rsaus17/sessionsFiles/3774/CXO-F02-Critical-Hygiene-for-Preventing-Major-Breaches.pdf)
+{{% /notice %}}
+
+Deploying ESAE is a foundation for a long term identity security solution.  Below is a timeline provided by Microsoft to deploy this security structure.
+
+![ESAE Overview](/en/redforest/images/ESAE_Methodology.jpg?classes=shadow)
+
+### Information
+
+We define information as can be as anything that holds data such as emails in your organization, research data, credit card numbers, trade secrets. Information is often chopped up into different classifications depending on its importance: Unclassified, Secret, and Top Secret.  Often the Secret and Top Secret information is the information attackers want so they can monetize their attack. 
+
+### Privileged Credentials
+
+The term 'privileged credentials' is often used to talk about the user accounts, service accounts, or administrators in your environment.  These people and processes often have access to sensitive information.  Attackers often specifically target these privileged administrative credentials to gain access to the confidential data. 
+
+### Resources and Servers
+
+One of ESAE's aim is to secure the data that is on your network.  By securing the locations where the information is stored, file shares, servers, workstations, a company makes it hard for attackers become successful.  
+
+{{% notice tip %}} 
+The ESAE framework outlines several quick wins, as well as a number of long term plans to secure privileged credentials. With these privileged credentials secure, attackers are less likely to move laterally and vertically through your network
+{{% /notice %}}
+
+Microsoft open-sourced much of the documentation for deploying the architecture. The documentation dispersed across TechNet, GitHub, YouTube videos, and other media. Piecing together the documentation can be a bit of a hassle.  The goal of this page and its structure is to put the main building blocks of the framework into an easily deployable structure.
+
+{{% notice info %}}
+The basic outline for starting the deployment buckets the security items into sections via deployment time. The three buckets outlined are; The First 30 days, 90 days, and Beyond 90 days.
+{{% /notice %}}
+* [The First 30 Days]({{%relref "redforest/first30/_index.md" %}})
+* [90 Days]({{%relref "redforest/90days/_index.md" %}})
+* [Beyond 90 Days]({{%relref "redforest/beyond90/_index.md" %}})
+
+{{< subcontent "/redforest/first30/_index.md" >}}
+
+does this show up down here?

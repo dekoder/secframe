@@ -1,0 +1,9 @@
+[submodule "themes/hugo-html5up-alpha"]
+	path = themes/hugo-html5up-alpha
+	url = https://github.com/dewittn/hugo-html5up-alpha.git
+[submodule "themes/hugo-cards"]
+	path = themes/hugo-cards
+	url = https://github.com/bul-ikana/hugo-cards.git
+[submodule "themes/learn"]
+	path = themes/learn
+	url = https://github.com/matcornic/hugo-theme-learn.git
