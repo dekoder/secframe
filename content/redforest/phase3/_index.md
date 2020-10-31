@@ -15,4 +15,4 @@ weight: 15
 * Code Integrity Policy for DCs
 * Shielded VMs for Virtual DCs
 
-![Steps to begin ESAE Phase3](</en/redforest/images/Protecting Admin Privileges Beyond 90.png?classes=shadow>)
+![Steps to begin ESAE Phase3](</redforest/images/Protecting Admin Privileges Beyond 90.png?classes=shadow>)

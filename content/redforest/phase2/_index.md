@@ -16,4 +16,4 @@ weight: 10
 * Lower attack surface of domain and DCs
 * Attack Detection
 
-![Steps to begin ESAE Phase2](</en/redforest/images/Protecting Admin Privileges 90 Days.png?classes=shadow>)
+![Steps to begin ESAE Phase2](</redforest/images/Protecting Admin Privileges 90 Days.png?classes=shadow>)
