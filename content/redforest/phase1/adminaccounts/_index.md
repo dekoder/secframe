@@ -13,7 +13,7 @@ First step is to figure out who in your environment should have an admin account
 
 The idea of an administrator account, an account used to perform administrative actions, had evolved. A frequently adopted model is for people to have a separate administrator account for their domain admin permissions. (If this model is not already in place in your environment, it should be adopted ASAP.) Where this model is a good first step, there is always room for improvement.  Who all on the environment should have both a regular user account AND an administrative account?
 
-![Users computers and folders](</en/redforest/phase1/images/UserComputerFolder.png?classes=shadow&width=500px>)
+![Users computers and folders](</redforest/phase1/images/UserComputerFolder.png?classes=shadow&width=500px>)
 
 If you answer yes to any of the following scenarios, the person needs a separate administrator account to perform work functions.
 
@@ -32,7 +32,7 @@ Can the person in control of the user object do any of the following:
 * Change the login script?
 * Set an SPN?
 
-![User permissions](</en/redforest/phase1/images/User Permissions.jpg?classes=shadow>)
+![User permissions](</redforest/phase1/images/User Permissions.jpg?classes=shadow>)
 
 #### Reason 2: Permissions are granted on computer objects
 Can this person perform these computer actions?
@@ -44,7 +44,7 @@ Can this person perform these computer actions?
 
 ##### to link - overlooked ACL Blog
 
-![Computer permissions](</en/redforest/phase1/images/Computer Permissions.jpg?classes=shadow>)
+![Computer permissions](</redforest/phase1/images/Computer Permissions.jpg?classes=shadow>)
 
 #### Reason 3: Permissions are granted on group objects
 Can this person perform these actions to any group?
