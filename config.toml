@@ -22,12 +22,6 @@ defaultContentLanguageInSubdir= true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-title = "AD and AWS Security Frameworks by David Rowe"
-weight = 1
-languageName = "English"
-landingPageURL = "/en"
-landingPageName = "<i class='fas fa-home'></i> Home"
-
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
 identifier = "ds"
