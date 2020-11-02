@@ -13,7 +13,7 @@ chapter: true
 ESAE is [Microsoft’s complete framework](https://social.technet.microsoft.com/wiki/contents/articles/37509.active-directory-red-forest-design-aka-enhanced-security-administrative-environment-esae.aspx) to protect Active Directory (AD). AD, in short, is the identity and access management tool in your business network that holds passwords, credentials, users, computers, groups. AD controls your access to resources across your network; 
 
 | Information and Applications | Privileged Credentials | Resources and Servers |
-| ---------------------------- | ---------------------- | --------------------- |
+| :----------------------------: | :----------------------: | :---------------------: |
 
 
 {{% notice info %}}
@@ -45,37 +45,37 @@ The basic outline for starting the deployment buckets the security items into se
 {{% /notice %}}
 
 ---
-## [The First 30 Days]({{%relref "redforest/first30/_index.md" %}})
-[![ESAE Phase 1 zero risk of operational downtime](</redforest/images/First30Days.png?classes=shadow>)](first30/)
-## [90 Days]({{%relref "redforest/90days/_index.md" %}})
+## ESAE Timeline
+### [The First 30 Days](phase1)
+![ESAE Phase 1 zero risk of operational downtime](</redforest/images/First30Days.png?classes=shadow>)
 
+### [90 Days](phase2)
 ![ESAE Phase 2 single investments leads to significant positive impact](</redforest/images/First 90 Days.png?classes=shadow>)
-## [Beyond 90 Days]({{%relref "redforest/beyond90/_index.md" %}})
 
+### [Beyond 90 Days](phase3)
 ![ESAE Phase 3 build meaningful active directory security resilience from long term threats](</redforest/images/Beyond 90.png?classes=shadow>)
 
 ---
-### Starting Microsoft's Phased Approach
+#### Starting Microsoft's Phased Approach
+
+---
+### Where to begin?
+---
+
+| I'd like to begin the journey. Let's get started with phase 1. |
+| :---: |
+| [Take me to phase 1](phase1)|
+
+---
+
+| I've already done some admin work and want to know what to do next. Let's get started with phase 2. |
+| :---: |
+| [Take me to phase 2](phase2) |
+
+---
+
+| Time for an investment! let's bring out the super secure stuff. |
+| :---: |
+| [Take me to phase 3](phase3) |
 
 [![Roadmap to ESAE](</redforest/images/Roadmap First 30 and 90 Days.png?classes=shadow>)](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
----
-## Where to begin?
----
-
-I'd like to begin the journey. Let's get started with phase 1.
-
-[Take me to phase 1](phase1)
-
----
-
-I've already done some admin work and want to know what to do next.
-Let's get started with phase 2.
-
-[Take me to phase 2](phase2)
-
----
-
-Time for an investment! let's bring out the door secure stuff.
-
-[Take me to phase 3](phase3)
-

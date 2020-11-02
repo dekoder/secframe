@@ -1,7 +1,10 @@
----
-title: Admin Accounts
-weight: 10
----
++++
+title = "Admin Accounts"
+weight = 10
+chapter = true
+pre = "1. "
++++
+
 ## What is an administrative account?
 ---
 #### If you are enacting change on a user, group, computer, organizational unit, or any object on a domain, you need an administrative account.

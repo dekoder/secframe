@@ -1,8 +1,10 @@
----
-title: Administrator Management
-weight: 100
----
- 
++++
+title = "Administrator Management"
+weight = 15
+chapter = true
+pre = "2. "
++++
+
 With a basic understanding of the various [Administrative Accounts](adminaccounts), [Microsoft Tiers](tiers), it's time to look into where do these accounts reside in an Active Directory Domain once these accounts are made.-
 
 

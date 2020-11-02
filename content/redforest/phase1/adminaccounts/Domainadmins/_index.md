@@ -1,6 +1,8 @@
 ---
 title: Domain Admin Accounts
 weight: 25
+
+pre: "- "
 ---
 ## Domain Administrators
 #### Tier 0
