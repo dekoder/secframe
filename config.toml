@@ -46,3 +46,8 @@ name = "<i class='fas fa-fw fa-bullhorn'></i> Contact"
 url = "/contact"
 weight = 30
 
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Post Tags"
+url = "/tags"
+weight = 40
+
