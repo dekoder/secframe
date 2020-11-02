@@ -6,7 +6,6 @@ title = "Security Frameworks by David Rowe"
 theme = "learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
-staticDir = ["static"]
 
 [params]
   editURL = "https://github.com/davidprowe/secframe/edit/master/Site/content/"
@@ -19,11 +18,15 @@ staticDir = ["static"]
   disableMermaid = false
   customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
   titleSeparator = "::"
-  # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "blue"
-  
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+
+title = "AD and AWS Security Frameworks by David Rowe"
+weight = 1
+languageName = "English"
+landingPageURL = "/en"
+landingPageName = "<i class='fas fa-home'></i> Home"
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
