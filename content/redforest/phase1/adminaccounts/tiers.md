@@ -5,16 +5,15 @@ weight: 12
 
 
 ### What are tiers?
+
+Microsoft has a methodology called Tiered Administration. Microsoft Services assists many companies across the globe respond to security breaches and incidents. The best and the brightest of various Microsoft teams discussed how companies were being breached, and how Microsoft designs solutions to secure post incidents. 
+ 
+To respond to incidents, Microsoft created Tiers: a method to segment an Active directory domain to protect the privileged identities. Start securing your organization, starts by segmenting users from administrators. 
  
  
-In the post [Administrative Accounts](/redforest/phase1/adminaccounts/) best practices for administrator accounts is  described in detail. After understanding the process of when a person gets a separate administrative account, "What type of resources do administrators have access to?" needs to be answered.
+In the post [Administrative Accounts](/redforest/phase1/adminaccounts/) best practices for administrator accounts is  described in detail. After understanding the process of when a person gets a separate administrative account, understand what resources people access. for that we...
 
-
- Microsoft has a methodology called Tiered Administration. Microsoft Services assists many companies across the globe respond to security breaches and incidents. The best and the brightest of the various cross industry Microsoft teams discussed how companies were being breached, and how Microsoft designs solutions to secure post incidents. 
- 
-A major process to start securing your organization, starts by segmenting users from administrators. 
-
-#### Segmentation doesn't stop there
+#### Dive into Tiers
 
 There are different levels of administrator access.  Administrators have different accounts based on the resources they access.
 
@@ -24,14 +23,12 @@ Microsoft calls this administrative separation "Tiers." Full documentation on Mi
 The numbers of the tiers are parallel to the [Trusted Computing Base "Protected Ring" security model.](https://en.wikipedia.org/wiki/Trusted_computing_base)
  
 
-secframe.com TCB Diagram
-TCB Diagram.png
- 
+
 ![ESAE trusted computing base protected ring](</redforest/phase1/images/TCB Diagram.png?classes=shadow>)
 
-### There are three tiers; Tier 0, Tier 1, and Tier 2
+### There Are Three Tiers For Administrators; Tier 0, Tier 1, and Tier 2
 
-For a beginners definition of Microsoft tiers, see the image below:
+For a very brief pictorial definition of Microsoft tiers, see the image below:
 
 ![Secframe.com Microsoft Tiered Model Guidelines](</redforest/phase1/images/Secframe.com Microsoft Tiered Model Guidelines.jpg?classes=shadow>)
  
@@ -55,9 +52,9 @@ Since there are three administrator tiers, begin with understanding there is thr
 
 | Tier # | Administrator Type |
 | ______:| __________________:|
-| 0 |[Domain Admin](domainadmin) |
-|1| [Server Admin](serveradmin) |
-|2| [Workstation Admin](workstationaccounts) |
+| 0 | [Domain Admin](domainadmins) |
+| 1 | [Server Admin](serveradmins) |
+| 2 | [Workstation Admin](workstationadmins) |
 
 To get started with deploying the tiers, start with the biggest most impactful item that secures the largest section of the domain, and as a bonus, it takes the least amount of time: [Tier 0; The Domain Administrators](domainadmin)
 
