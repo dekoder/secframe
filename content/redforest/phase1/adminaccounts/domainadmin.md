@@ -1,6 +1,6 @@
 ---
 title: Domain Admin Accounts
-weight: 100
+weight: 25
 ---
 
 ### Why does tier 0 have the least number of administrators?
