@@ -4,7 +4,7 @@ weight: 50
 pre: "<b>4. </b>"
 chapter: true
 aliases: 
-    - /blog/aws-security
+    - /blog/aws-security/
 ---
 
 I'm probably working on this page...
@@ -30,7 +30,7 @@ Suggested Reads:
 
 ---
 ## Five Security Pillars:
-{{% children depth=1 %}}
+{{% children %}}
 
 ---
 ### List of Userful Links for AWS Security
