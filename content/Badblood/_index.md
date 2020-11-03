@@ -34,7 +34,8 @@ Each time this tool runs, it produces different results.  The domain, users, gro
 
  The Invoke-BadBlood.ps1 PowerShell script is at the root of the BadBlood repo. A few prompts appear designed to ensure this is only run in a testing or educational environment. 
  
-{{% notice warning %}} PLEASE! Only run this is in testing. {{ /notice }}
+{{% notice warning %}} PLEASE! Only run this is in testing. 
+{{ /notice }}
  
 Follow the prompts to begin the deployment of BadBlood.
  
