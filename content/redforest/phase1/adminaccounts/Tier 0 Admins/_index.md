@@ -1,11 +1,9 @@
 ---
 title: Tier 0 Admins
 weight: 25
-pre: "- "
+pre: ": "
 ---
-#### Who are the Tier 0 Admins?
-
-## Tier 0 (Zero)
+#### Who are the Tier 0 (Zero) Admins?
 
 <!-- need some more stuff on cleaning up domain admins 
 start with active directory domain admin accounts and cleanup before driving into tiered stuff
@@ -35,7 +33,7 @@ This file is the one thing that rules the domain. People that control this file 
 ### Access to Observed Systems
 Access to the ntds file can come on many different manners: applications installed the servers, agents or services running on the servers, scheduled task or scheduled jobs, hard disk administrators, backup administrators. The list goes on.
 
-![Secframe.com Microsoft Tiers](</redforest/phase1/images/Tier 0 Observed Systems.png?classes=shadow>)
+![Secframe.com Microsoft Tiers](</redforest/phase1/images/Tier 0 Observed Systems.png?classes=shadow&width=40pc>)
 
 This reference picture above is a great place to start to understand how many Tier 0 administrators, _not just domain administrators_, an organization might have. By focusing on all the separate areas that control this precious file, an organization can begin to identify areas he or she needs to protect.
 

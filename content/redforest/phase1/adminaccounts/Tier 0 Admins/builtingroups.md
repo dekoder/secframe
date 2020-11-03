@@ -1,7 +1,7 @@
 ---
 title: Tier 0 A.D. Built In Groups
 weight: 40
-pre: "- "
+pre: "::: "
 ---
 
 This security post continues the mini series Active Directory Builtin groups that are often overlooked. The permissions for the groups are granted by default upon the creation of a domain. The focus on the these groups plans to be a reference point for budding security analysts and engineers.

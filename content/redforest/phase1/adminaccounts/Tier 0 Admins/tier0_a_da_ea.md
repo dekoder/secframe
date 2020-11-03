@@ -1,7 +1,7 @@
 ---
 title: Tier 0 A.D. A/DA/EA Groups
 weight: 30
-pre: "- "
+pre: "::: "
 ---
 
 How often do you ask the question, "How many Domain Admins do we have?" Probably more often than you ask, "Who is in the group policy creator owners group today?" Active directory creates a number of groups with every new domain deployment. They are often the building blocks of privileged access in a domain.

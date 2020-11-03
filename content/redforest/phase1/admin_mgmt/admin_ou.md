@@ -1,7 +1,7 @@
 ---
 title: Admin OU
 weight: 25
-pre: "- "
+pre: ": "
 ---
 Today's topic to answer:
 

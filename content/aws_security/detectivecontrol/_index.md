@@ -4,8 +4,8 @@ weight: 20
 pre: "<b>2. </b>"
 chapter: false
 ---
-
-### Pillar #1 IAM
+#### Logging & Monitoring
+### Pillar #2 Detective Control
 [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/iam-ug.pdf#best-practices)
 
 | IAM Topic | Documentation |

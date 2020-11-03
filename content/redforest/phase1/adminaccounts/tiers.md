@@ -1,7 +1,7 @@
 ---
 title: Tiered Administration
 weight: 12
-pre: "- "
+pre: ": "
 ---
 
 
