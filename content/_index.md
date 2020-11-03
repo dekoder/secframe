@@ -9,9 +9,8 @@ Conquer security challenges with best in class solutions.  **Cost effective, qui
 
 ## Take a dip into a world of security
 
-
-- [AD Threat Hunting]({{%relref "badblood/_index.md" %}})
 - [Redforest and Microsoft ESAE]({{%relref "redforest/_index.md" %}})
+- [AD Threat Hunting]({{%relref "badblood/_index.md" %}})
 - [AD Cloning]({{%relref "ad_clone/_index.md" %}})
 - [AWS Security Pillars]({{%relref "awssecurity/_index.md" %}})
 - [Blog]({{%relref "blog/_index.md" %}})

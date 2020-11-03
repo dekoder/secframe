@@ -1,7 +1,7 @@
 ---
 title: BadBlood
 weight: 20
-pre: "<b>1. </b>"
+pre: "<b>2. </b>"
 chapter: false
 tags: ["ESAE", "Microsoft"]
 ---
