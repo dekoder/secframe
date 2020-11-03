@@ -2,7 +2,7 @@
 title: Red Forest
 weight: 5
 pre: "<b>1. </b>"
-chapter: true
+chapter: false
 tags: ["ESAE", "Microsoft"]
 aliases:
     - /blog/what-is-microsoft-esae-and-red-forest/
