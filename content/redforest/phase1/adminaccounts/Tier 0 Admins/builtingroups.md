@@ -1,5 +1,5 @@
 ---
-title: Tier 0 A.D. Built In Groups
+title: Tier 0 Built In Groups
 weight: 40
 pre: "::: "
 ---

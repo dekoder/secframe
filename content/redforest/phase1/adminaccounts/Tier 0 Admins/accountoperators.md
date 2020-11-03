@@ -1,10 +1,18 @@
-In Microsoft’s Active Directory Security Groups blog post the permissions granted to the account operators are defined as:
+---
+title: Tier 0 Account Operators
+weight: 90
+pre: "::: "
+aliases: 
+    - blog/account-operators-what-can-they-control
+---
+
+In [Microsoft’s Active Directory Security Groups blog post](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-accountoperators) the permissions granted to the account operators are defined as:
 
 The Account Operators group grants limited account creation privileges to a user. Members of this group can create and modify most types of accounts, including those of users, local groups, and global groups, and members can log in locally to domain controllers.
 
 By default, this built-in group has no members, and it can create and manage users and groups in the domain
 
-PIC 1 
+![Account operators managing stuff](/redforest/phase1/images/accountops_1.png?classes=shadow&width=40pc)
 
 Account Operators Can Manage
 These permissions described above, there is no mention of computers. However account operators group has full control of most every computer on the domain. I want to show why the Account Operators groups has permissions over computers, and also what other objects in the domain they can control.

@@ -25,13 +25,13 @@ The numbers of the tiers are parallel to the [Trusted Computing Base "Protected 
  
 
 
-![ESAE trusted computing base protected ring](</redforest/phase1/images/TCB Diagram.png?classes=shadow>)
+![ESAE trusted computing base protected ring](</redforest/phase1/images/TCB Diagram.png?classes=shadow&?width=40pc>)
 
 ### There Are Three Tiers For Administrators; Tier 0, Tier 1, and Tier 2
 
 For a very brief pictorial definition of Microsoft tiers, see the image below:
 
-![Secframe.com Microsoft Tiered Model Guidelines](</redforest/phase1/images/Secframe.com Microsoft Tiered Model Guidelines.jpg?classes=shadow>)
+![Secframe.com Microsoft Tiered Model Guidelines](</redforest/phase1/images/Secframe.com Microsoft Tiered Model Guidelines.jpg?classes=shadow&width=40pc>)
  
 
 Trusted Sec Levels Mapped to Microsoft Tiers:
@@ -52,7 +52,7 @@ Trusted Sec Levels Mapped to Microsoft Tiers:
 Since there are three administrator tiers, begin with understanding there is three sets of administrators to add into a domain. 
 
 | Tier # | Administrator Type |
-| ______:| __________________:|
+| _____: | _________________: |
 | 0 | [Domain Admin](domainadmins) |
 | 1 | [Server Admin](serveradmins) |
 | 2 | [Workstation Admin](workstationadmins) |

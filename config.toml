@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://secframe.com.s3-website-us-east-1.amazonaws.com"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
@@ -50,4 +50,11 @@ weight = 30
 name = "<i class='fas fa-tags'></i> Post Tags"
 url = "/tags"
 weight = 40
+
+[deployment]
+order = [".jpg$", ".gif$", ".png$"]
+
+[[deployment.targets]]
+name = "secframe"
+URL = "s3://secframe.com?region=us-east-1"
 
