@@ -18,7 +18,7 @@ defaultContentLanguageInSubdir= true
   disableMermaid = false
   customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
   titleSeparator = "::"
-  themeVariant = "blue"
+  themeVariant = "secframe"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
@@ -58,3 +58,12 @@ order = [".jpg$", ".gif$", ".png$"]
 name = "secframe"
 URL = "s3://secframe.com?region=us-east-1"
 
+[[deployment.matchers]]
+# Cache static assets for 20 years.
+pattern = "^.+\\.(js|css|png|jpg|gif|svg|ttf)$"
+cacheControl = "max-age=630720000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true

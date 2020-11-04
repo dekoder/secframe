@@ -17,7 +17,7 @@ aliases:
 ESAE is [Microsoft’s complete framework](https://social.technet.microsoft.com/wiki/contents/articles/37509.active-directory-red-forest-design-aka-enhanced-security-administrative-environment-esae.aspx) to protect Active Directory (AD). AD, in short, is the identity and access management tool in your business network that holds passwords, credentials, users, computers, groups. AD controls your access to resources across your network; 
 
 | Information and Applications | Privileged Credentials | Resources and Servers |
-| :----------------------------: | :----------------------: | :---------------------: |
+| :-----------------: | :-------------: | :--------------: |
 
 
 {{% notice info %}}
