@@ -2,9 +2,11 @@
 title: Tier 0 Built In Groups
 weight: 40
 pre: "::: "
+aliases: 
+    - /blog/forget-me-not-list-privileged-groups-to-audit-today
 ---
 
-This security post continues the mini series Active Directory Builtin groups that are often overlooked. The permissions for the groups are granted by default upon the creation of a domain. The focus on the these groups plans to be a reference point for budding security analysts and engineers.
+This security post continues the mini series Active Directory [Builtin groups](/redforest/phase1/adminaccounts/tier-0-admins/) that are often overlooked. The permissions for the groups are granted by default upon the creation of a domain. The focus on the these groups plans to be a reference point for budding security analysts and engineers.
 
 For a full list of permissions on the default built in groups, please reference the Microsoft article
 

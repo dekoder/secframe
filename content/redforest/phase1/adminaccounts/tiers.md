@@ -2,6 +2,8 @@
 title: Tiered Administration
 weight: 12
 pre: ": "
+aliases: 
+    - /blog/what-are-tiers-and-who-holds-the-keys-to-the-kingdom
 ---
 
 
