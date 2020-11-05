@@ -21,7 +21,7 @@ Each section is organized with small steps to begin a phased approach into secur
 
 |   |    |    |
 | :--: | :----: |:-------:|
-| [BadBlood AD Threat Hunting]({{%relref "badblood/_index.md" %}}) | [Redforest and Microsoft ESAE]({{%relref "redforest/_index.md" %}}) | [AD Cloning]({{%relref "ad_clone/_index.md" %}}) |
+| [AD Threat Hunting With BadBlood]({{%relref "badblood/_index.md" %}}) | [Redforest and Microsoft ESAE]({{%relref "redforest/_index.md" %}}) | [AD Cloning]({{%relref "ad_clone/_index.md" %}}) |
 | [AWS Security Pillars]({{%relref "awssecurity/_index.md" %}}) | [Blog]({{%relref "blog/_index.md" %}}) | [AD/AWS Audits]({{%relref "contact/_index.md" %}}) |
 
 

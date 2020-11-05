@@ -1,7 +1,7 @@
 ---
 title: AWS Security Pillars
-weight: 50
-pre: "<b>4. </b>"
+weight: 500
+pre: "<b>5. </b>"
 chapter: true
 aliases: 
     - /blog/aws-security/
