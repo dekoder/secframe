@@ -1,4 +1,4 @@
 ---
-title: Secframe Blog Posts
+title: Blogs
 ---
 {{% children depth=2 %}}
