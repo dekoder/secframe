@@ -8,12 +8,13 @@ chapter: false
 ### Pillar #1 IAM
 [AWS IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/iam-ug.pdf#best-practices)
 
+<!-- | Change Root User Password | [Change Root password AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_change-root.html%C2%A0) |
+| AWS Root User Guide | [AWS Root Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) | -->
 | IAM Topic | Documentation |
 | :---: | :---: |
-| Change Root User Password | [Change Root password AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_change-root.html%C2%A0) |
-| AWS Root User Guide | [AWS Root Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html) |
-| Start with Root User |  [Two steps to start with the Root Account](iam/startingwithroot) |
-| IAM User Passwords | [Credential Account Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html) 
+| Start with Root User |  [Two steps to start with the Root Account](startingwithroot) |
+| Create IAM Users | [create aws iam administrators](create_iam_user) |
+| IAM User Passwords | [Credential Account Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_passwords_account-policy.html) |
 | Identify AWS Administrators | [Get All AWS Admins with Powershell](iam/admins_pshell) |
 | Adding MFA to IAM Users | [Using MFA on AWS](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html) [MFA in 10 Steps](iam/iam_mfa) |
 | MFA on CLI | [MFA Token with CLI](https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli/) |
