@@ -1,10 +1,15 @@
-
-
+---
 title: Adding a Backdoor to AD in 400 Milliseconds
-
+description: How fast does it take for an experienced attacker to put a backdoor into your identity system?  The answer is much quicker than you ever imagined.
+date : 2020-02-19T00:00:00+04:00
+lastmod : 2020-11-10T00:00:00+04:00
+tags: ['Security','Active Directory','LAPS']
+aliases:
+    - /blog/persistence-in-400-milliseconds
+---
 Persistence is a standard method for attackers to keep their toes inside a target computer system. “Persistence consists of techniques that adversaries use to keep access to systems across restarts, changed credentials, and other interruptions that could cut off their access.” Source
 
-"Permissions applied in milliseconds?" What's that mean for an environment that's experienced a compromise?
+> "Permissions applied in milliseconds?" What's that mean for an environment that's experienced a compromise?
  
 Any security device or security system has unique ways attackers apply persistence to remain in control. Attackers use this persistence to allow themselves to return to the system and keep administrative privileges.
 
@@ -14,42 +19,36 @@ Any security device or security system has unique ways attackers apply persisten
  
 I designed the first release of BadBlood to simulate random Active Directory persistence attacks. Some attacks applied in the first release include
 
-LAPS read access
-Serviceprincipalname controlDerivative domain admin
-Dssync privileges
-GPO permission delegation
+1. LAPS read access
+1. Serviceprincipalname controlDerivative domain admin
+1. Dssync privileges
+1. GPO permission delegation
 
  
 
-If you decide to test BadBlood, you might choose to run the full domain import, or you might choose to run just a segment of the tool. If you run all the scripts, notice that the full creation of the domain, the OUs, users, groups, computers, permissions, and grouping, takes 30 minutes+. If you decide to test only the part of the script that applies permissions, you'll notice the permissions apply in seconds.
+If you decide to test [BadBlood](/badblood), you might choose to run the full domain import, or you might choose to run just a segment of the tool. If you run all the scripts, notice that the full creation of the domain, the OUs, users, groups, computers, permissions, and grouping, takes 30 minutes+. If you decide to test only the part of the script that applies permissions, you'll notice the permissions apply in seconds.
 
- 
+## "Permissions applied in seconds." What does that mean to an environment that's had a compromise?
 
-"Permissions applied in seconds." What does that mean to an environment that's had a compromise?
-
- 
-
-An attacker can implant a method of persistence in an active directory in a matter of seconds.
+### An attacker can implant a method of persistence in an active directory in a matter of seconds.
 
  
 If you are breached and you know the attacker gained access to a highly privileged group, the attacker may have implanted a subversive method to hide in your domain even if the attacker only had access for minutes.
 
- 
-
 BadBlood currently applies persistence attacks randomly. Random users get random permissions on random OUs. If I was an attacker, I could apply any of these persistence attacks to a domain in under 10 seconds.
 
-My last few posts are on LAPS, so I'll start by simulating a LAPS Persistence Attack
+My last few [Red forest posts](/redforest/phase1/laps) are on LAPS, so I'll start by simulating a LAPS Persistence Attack
 
 I can add LAPS permissions into the domain in under one second. Literally 396 milliseconds. Attackers can have a backdoor into your domain in under 400 ***MILLI***iseconds!  Thats 4/10ths of a second! 
 
-Attack Persistence in 398 milliseconds
+![Attack Persistence in 398 milliseconds](images/persistence1.png?classes=shadow&width=60pc)
 
 "But the attacker was only in my system for 4 minutes! It's ok!"  
 
 Is it?... Is it really.  I can add a smorgasbord of backdoors in 4 minutes.
 
 Boomsauce Below:
-
+```powershell
 function ApplyPersistenceLAPS {
     ## Create guidmap for acl functions
     cd ad:
@@ -94,16 +93,13 @@ function ApplyPersistenceLAPS {
     $in = 'Descendents'
     ReadcomputerAdmPwd -objGroup $user -objOU $ou -inheritanceType $in
 }
-ApplyPersistenceLAPS
 
+ApplyPersistenceLAPS
+```
  
 Simply because this code may be new to you, doesn't mean the code isn’t already in the hands of well funded attackers.
 
- 
-
 Is not as simple to reverse the effects of an attacker. If you happen to have AD auditing on, and if you happen to audit permission changes on all sub OUs, guide here, searching for these events in real time or post incident is a bit mundane and tiresome.
-
- 
 
 There are no specific permissions identified in the alert. The record shows a very generic event.
 
@@ -111,7 +107,7 @@ Category: Directory Service Changes
 Description: A directory service object was modified.
  
 
-Here is a generating event on the DC - Download link - Embeded Txt Below
+Here is a generating event on the DC
 
 ```
 Log Name:      Security
