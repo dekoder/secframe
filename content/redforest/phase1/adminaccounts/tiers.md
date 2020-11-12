@@ -2,6 +2,8 @@
 title: Tiered Administration
 weight: 12
 pre: ": "
+aliases: 
+    - /blog/what-are-tiers-and-who-holds-the-keys-to-the-kingdom
 ---
 
 
@@ -52,10 +54,11 @@ Trusted Sec Levels Mapped to Microsoft Tiers:
 Since there are three administrator tiers, begin with understanding there is three sets of administrators to add into a domain. 
 
 | Tier # | Administrator Type |
-| _____: | _________________: |
+| ---: | :--- |
 | 0 | [Domain Admin](domainadmins) |
 | 1 | [Server Admin](serveradmins) |
 | 2 | [Workstation Admin](workstationadmins) |
+
 
 To get started with deploying the tiers, start with the biggest most impactful item that secures the largest section of the domain, and as a bonus, it takes the least amount of time: [Tier 0; The Domain Administrators](domainadmin)
 

@@ -3,6 +3,7 @@ title = "Admin Accounts"
 weight = 10
 chapter = true
 pre = "1. "
+aliases =  "/blog/4-reasons-she-needs-an-admin-account"
 +++
 
 ## What is an administrative account?

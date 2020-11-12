@@ -3,7 +3,7 @@ title: Tier 0 Account Operators
 weight: 90
 pre: "::: "
 aliases: 
-    - blog/account-operators-what-can-they-control
+    - /blog/account-operators-what-can-they-control
 ---
 
 In [Microsoft’s Active Directory Security Groups blog post](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups#bkmk-accountoperators) the permissions granted to the account operators are defined as:
