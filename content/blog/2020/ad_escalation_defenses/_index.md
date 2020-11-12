@@ -5,6 +5,7 @@ date : 2020-04-23T00:00:00+04:00
 lastmod : 2020-11-10T00:00:00+04:00
 tags: ['Security','Active Directory']
 aliases:
+    - /blog/escalation-defenses-ad-guardrails-every-company-should-deploy
 ---
 
 The Defenses Every Company Should Deploy:

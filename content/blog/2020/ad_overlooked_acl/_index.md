@@ -26,9 +26,6 @@ This exploit is so, so, so, so easy, I honestly cannot believe it is not on the 
  
 
 Put two things together to make something great. New ways to scare clients!
-
-
- 
  
 
 Previous attack paths are derived attack paths. Paths that exist because a domain is set up in one particular way. If you have access to change how objects on a domain are arranged, how a domain is configured, you can do much more on the domain and find many more places to escalate privileges. Mix changing the domain around with LAPS read permissions and you can get a machine admin password. Pair changes with GPOs that apply RDP access and open RDP the targeted device.  
