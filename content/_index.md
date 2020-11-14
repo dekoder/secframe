@@ -1,7 +1,10 @@
 ---
 title: "Security Frameworks For Everyone"
 ---
+## Welcome to Secframe
 
+Thanks for taking a look at my adventure that attempts to get people and companies into a better security mindset.
+ 
 # Increase Your Security Footprint
 
 Conquer security challenges with best in class solutions.  **Cost effective, quick deployments** that close many of the traditional security gaps.

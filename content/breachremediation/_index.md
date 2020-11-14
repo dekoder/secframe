@@ -9,7 +9,6 @@ aliases:
 ---
 
 #### Take The Domain Back
-## Active Directory Breach Remediation Service By Secframe
 
 ![Active Directory Breach Remediation](images/remediation.png?classes=shadow&width=60pc)
 When third parties exploit AD, they have the keys to the rest of your environment .
@@ -46,4 +45,3 @@ Get systems back online quickly with a well designed plan
 - Need guidance to understand AD privileges
 - Want to remove any privileged credential exposure
  
-At SecFrame we listen to your style of  management, and create a plan to fix the  risks associated with the practices in your environment. 
