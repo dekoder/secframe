@@ -68,18 +68,18 @@ The basic outline for starting the deployment buckets the security items into se
 
 | I'd like to begin the journey. Let's get started with phase 1. |
 | :---: |
-| [Take me to phase 1](phase1)|
+| [Take me to phase 1](phase1/)|
 
 ---
 
 | I've already done some admin work and want to know what to do next. Let's get started with phase 2. |
 | :---: |
-| [Take me to phase 2](phase2) |
+| [Take me to phase 2](phase2/) |
 
 ---
 
 | Time for an investment! let's bring out the super secure stuff. |
 | :---: |
-| [Take me to phase 3](phase3) |
+| [Take me to phase 3](phase3/) |
 
 [![Roadmap to ESAE](</redforest/images/Roadmap First 30 and 90 Days.png?classes=shadow>)](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)

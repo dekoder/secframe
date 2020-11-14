@@ -8,9 +8,9 @@ weight: 5
 ## ESAE Phase 1 Outline
 
 * Separate Admin accounts for Administrative tasks
-    * Workstation admin accounts
-    * Server admin accounts
-    * Domain Admin accounts
+    * [Domain Admin accounts](adminaccounts/tier-0-admins/)
+    * [Server admin accounts](adminaccounts/serveradmins/)
+    * [Workstation admin accounts](adminaccounts/workstationadmins/)
 * Deploy Privileged Access Workstations
     * Phase 1 - PAWS for Active Directory Administrators
 * Create Unique Local Admin Passwords for Workstations

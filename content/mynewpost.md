@@ -8,4 +8,5 @@ aliases:
     - /blog/thisisanoldlink
 draft: true
 hidden: true
+tags: ['tag1','tag2']
 ---
