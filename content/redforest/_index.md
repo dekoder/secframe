@@ -6,6 +6,7 @@ chapter: false
 tags: ["ESAE", "Microsoft"]
 aliases:
     - /blog/what-is-microsoft-esae-and-red-forest/
+    - /blog/what-is-microsoft-esae-and-red-forest
 
 ---
 ### Chapter 1
