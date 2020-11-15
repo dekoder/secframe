@@ -4,6 +4,7 @@ date: 2020-01-01T16:47:17-04:00
 draft: false
 aliases: 
     -  /blog/account-operators
+    -  /blog/account-operators/
 ---
 
 
