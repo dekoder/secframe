@@ -10,11 +10,12 @@ draft: true
 
 **Don't overcomplicate things.**
 
-1. [Update Active Directory Schema]()
-2. Create and Enable GPO for Password settings sand rotation policy
-3. Install LAPS client into windows computers
+1. [Update Active Directory Schema](#step1)
+2. [Create and Enable GPO for Password settings sand rotation policy](#step2)
+3. [Install LAPS client into windows computers](#step3)
 
 ## Step 1 (step1)
+### Update Active Directory Schema
 
 I boiled this down to one function in powershell. The [Badblood Repo Laps Install Folder](https://github.com/davidprowe/BadBlood/tree/master/AD_LAPS_Install)
 has the function `.BadBlood/AD_LAPS_Install/InstallLAPSSchema.ps1`
@@ -63,3 +64,27 @@ There are two GPOs to configure in the domain: One for servers. One for workstat
 | [Tier 2]() Workstation | 30 day maximum password age |
 
 ----
+### Tier 2 LAPS GPO
+Here's an outline of what the LAPS GPO should look like for workstations, tier 2 devices.
+![tier 1 laps](images/laps1.png)
+
+The settings are outlined as follows  
+Setting Name  | Suggested Setting
+---|---
+  | 
+  
+## Step 3 (step3)
+### Install LAPS client into windows computers
+
+Keep it easy. 
+> Install Laps using the same GPO created in step 2
+
+Here's how to do it
+to add picture of install software
+
+
+----
+
+## LAPS is now successfully deployed
+
+Congratulations. Microsoft LAPS is now successfully deployed in the domain.
