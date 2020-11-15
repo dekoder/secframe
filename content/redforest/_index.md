@@ -50,13 +50,14 @@ The basic outline for starting the deployment buckets the security items into se
 
 ---
 ## ESAE Timeline
-### [The First 30 Days](phase1)
+### [The First 30 Days](phase1/)
 ![ESAE Phase 1 zero risk of operational downtime](</redforest/images/First30Days.png?classes=shadow>)
+<!-- to add picture of stuff to do on phases here -->
 
-### [90 Days](phase2)
+### [90 Days](phase2/)
 ![ESAE Phase 2 single investments leads to significant positive impact](</redforest/images/First 90 Days.png?classes=shadow>)
 
-### [Beyond 90 Days](phase3)
+### [Beyond 90 Days](phase3/)
 ![ESAE Phase 3 build meaningful active directory security resilience from long term threats](</redforest/images/Beyond 90.png?classes=shadow>)
 
 ---
