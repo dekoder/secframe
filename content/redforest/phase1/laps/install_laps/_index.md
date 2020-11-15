@@ -20,6 +20,7 @@ I boiled this down to one function in powershell. The [Badblood Repo Laps Instal
 has the function `.BadBlood/AD_LAPS_Install/InstallLAPSSchema.ps1`
 
 Which runs the following code. 
+
 ```powershell
 function Get-ScriptDirectory {
     Split-Path -Parent $PSCommandPath
@@ -40,9 +41,25 @@ Set-AdmPwdComputerSelfPermission -OrgUnit (Get-ADDomain).distinguishedname
 
 If you are a Domain Administrator and Schema Administrator, and logged into a domain controller this function does the following for you:
 
-1. Copies the LAPS powershell modules into the modules folder on the server you are on
+1. Copies the LAPS powershell modules into the modules folder on the server you are logged into
 2. Imports the LAPS GPO templates into the server
 3. Extends the schema for LAPS
-4. As the computer object property on the root of the domain to each computer to write its new custom administrative password to the admpwd attribute
+4. Adds the computer object property on the root of the domain to each computer to write its new custom administrative password to the admpwd attribute
 
 > Step one complete by running one script
+
+onto...
+-------
+
+## Step 2 (step2)
+### Create and enable GPO for LAPS settings on the domain
+
+There are two GPOs to configure in the domain: One for servers. One for workstations
+
+| Computer type | Recommended LAPS setting |
+| --- | --- |
+| [Tier 0]() Domain Controllers | No LAPS installation |
+| [Tier 1]() Servers | 7 day maximum password age |
+| [Tier 2]() Workstation | 30 day maximum password age |
+
+----
