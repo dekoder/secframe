@@ -1,7 +1,7 @@
 +++
 title = "Admin Accounts"
 weight = 10
-chapter = true
+chapter = false
 pre = "1. "
 aliases =  "/blog/4-reasons-she-needs-an-admin-account"
 +++
