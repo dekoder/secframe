@@ -11,9 +11,8 @@ weight: 5
     * [Domain Admin accounts](adminaccounts/tier-0-admins/)
     * [Server admin accounts](adminaccounts/serveradmins/)
     * [Workstation admin accounts](adminaccounts/workstationadmins/)
-* Deploy Privileged Access Workstations
-    * Phase 1 - PAWS for Active Directory Administrators
-* Create Unique Local Admin Passwords for Workstations
-* Create Unique Local Admin Passwords for Servers
+* [Deploy Privileged Access Workstations (PAWS\) for Active Directory Administrators](paws/)
+* [Create Unique Local Admin Passwords for Workstations](laps/)
+* [ Create Unique Local Admin Passwords for Servers](laps/)
 
 ![Steps to begin ESAE](</redforest/images/Protecting Admin Privileges 30 days.png?classes=shadow>)

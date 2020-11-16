@@ -5,6 +5,7 @@ pre: "<b>5. </b>"
 chapter: true
 aliases: 
     - /blog/aws-security/
+    - /blog/aws-security
 ---
 
 I'm probably working on this page...

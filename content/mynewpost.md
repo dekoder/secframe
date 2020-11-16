@@ -9,4 +9,6 @@ aliases:
 draft: true
 hidden: true
 tags: ['tag1','tag2']
+images:
+    - /path/to/image.jpg
 ---

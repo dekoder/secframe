@@ -3,6 +3,7 @@ title: Create IAM user & Stop Using Root
 weight: 20
 aliases: 
     - /blog/aws-security-iam-administrators
+    - /blog/aws-security-iam-administrators/
 ---
 
 In my [previous post](/aws_security/iam/startingwithroot), I went into several best practices to deploy in your AWS account that add security to your account from the start. In this post, I'll be digging into some ideas that assist you to secure IAM even further. These Items continue to build an IAM security framework in AWS.
