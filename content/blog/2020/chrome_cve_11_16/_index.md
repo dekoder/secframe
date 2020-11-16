@@ -1,6 +1,7 @@
 ---
 title: Chrome Critical Patches and Microsoft Tiers
 date: 2020-11-16T16:47:17-04:00
+description: Why you need to microsoft tiers, and update update update custom software.
 tags: ['Chrome', 'Tiers','redforest']
 images:
     - /images/featured.jpg
