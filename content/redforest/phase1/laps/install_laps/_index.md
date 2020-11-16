@@ -82,7 +82,10 @@ Keep it easy.
 Here's how to do it
 to add picture of install software
 
-
+The settings are outlined as follows  
+Setting Name  | Suggested Setting
+---|---
+  | 
 ----
 
 ## LAPS is now successfully deployed
