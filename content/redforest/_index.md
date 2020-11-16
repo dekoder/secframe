@@ -9,9 +9,7 @@ aliases:
     - /blog/what-is-microsoft-esae-and-red-forest
 
 ---
-### Chapter 1
-
-# What is Microsoft's ESAE and Red Forest?
+## What is Microsoft's ESAE and Red Forest?
 
 ## The Enhanced Security Administrative Environment
 

@@ -1,15 +1,20 @@
 ---
 title: Install and Configure LAPS
+description: How to install laps and have unique administrator passwords on an Active Directory Domain.
 weight: 10
 date: 2020-11-12T16:47:17-04:00
 chapter: false
-draft: true
+draft: false
 ---
 
-## Steps to install LAPS
+## How to install LAPS
 
 **Don't overcomplicate things.**
 
+[The full Microsoft Guide to installing LAPS](https://gallery.technet.microsoft.com/step-by-step-deploy-local-7c9ef772/file/150657/1/step%20by%20step%20guide%20to%20deploy%20microsoft%20laps.pdf)
+
+---
+### 3 Steps to install Laps
 1. [Update Active Directory Schema](#step1)
 2. [Create and Enable GPO for Password settings sand rotation policy](#step2)
 3. [Install LAPS client into windows computers](#step3)
@@ -74,21 +79,37 @@ Setting Name  | Suggested Setting
 ---|---
   | 
   
+---
+
 ## Step 3 (step3)
-### Install LAPS client into windows computers
+### Install LAPS client into Windows computers
 
 Keep it easy. 
 > Install Laps using the same GPO created in step 2
 
-Here's how to do it
-to add picture of install software
+Automate the installation of LAPS onto all the windows machines on the domain.
 
-The settings are outlined as follows  
-Setting Name  | Suggested Setting
----|---
-  | 
+1. Create a new GPO or use the GPO previously created in the step above
+![install laps on windows machines](images/lapsinstall1.jpg)
+2. Edit the GPO created above
+![install laps on windows machines](images/lapsinstall2.jpg)
+3. In Computer Configuration --> Policies --> Software Settings, Right click Software installation, an select 'New' --> 'Package'
+![install laps on windows machines](images/lapsinstall3.jpg)
+4. Choose the LAPS software that is on share on the domain.  I often see the .msi in the Sysvol folder for ease of distribution
+![install laps on windows machines](images/lapsinstall4.jpg)
+5. Verify the source is correct in the GPO
+![install laps on windows machines](images/lapsinstall5.jpg)
+6. Wait 15 minutes on a remote machine on the domain and perform a `gpupdate /force`
+![install laps on windows machines](images/lapsinstall6.jpg)
+7. LAPS should be installed on the workstation/server.
+![install laps on windows machines](images/lapsinstall7.jpg)
+
+Per the pdf linked above:
+> You now see that LAPS x64 has been imported. In case you are adding x86 LAPS, once you add the package be sure to edit the x86 package to uncheck the option Make this 32-bit X86 application available to Win64 machines. You will find this option when you right click the x86 package > Properties > Deployment. This will ensure that 64-bit computers get the 64-bit DLL, and 32-bit machines get the 32-bit DLL. Close the GPM editor.
 ----
 
 ## LAPS is now successfully deployed
 
 Congratulations. Microsoft LAPS is now successfully deployed in the domain.
+
+> Pictures from this post are from the Microsoft PDF linked at the top of the page.
