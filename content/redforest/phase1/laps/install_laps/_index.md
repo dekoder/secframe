@@ -50,6 +50,7 @@ If you are a Domain Administrator and Schema Administrator, and logged into a do
 > Step one complete by running one script
 
 onto...
+
 -------
 
 ## Step 2 (step2)
@@ -59,9 +60,9 @@ There are two GPOs to configure in the domain: One for servers. One for workstat
 
 | Computer type | Recommended LAPS setting |
 | --- | --- |
-| [Tier 0]() Domain Controllers | No LAPS installation |
-| [Tier 1]() Servers | 7 day maximum password age |
-| [Tier 2]() Workstation | 30 day maximum password age |
+| [Tier 0](/redforest/phase1/adminaccounts/tier-0-admins/) Domain Controllers | No LAPS installation |
+| [Tier 1](/redforest/phase1/adminaccounts/serveradmins/) Servers | 7 day maximum password age |
+| [Tier 2](/redforest/phase1/adminaccounts/workstationsadmins/) Workstation | 30 day maximum password age |
 
 ----
 ### Tier 2 LAPS GPO
