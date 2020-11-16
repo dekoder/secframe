@@ -1,7 +1,7 @@
 ---
-title: Tier 0 Account Operators
+title: Account Operators
 weight: 90
-pre: "::: "
+pre: ":: "
 aliases: 
     - /blog/account-operators-what-can-they-control
 ---

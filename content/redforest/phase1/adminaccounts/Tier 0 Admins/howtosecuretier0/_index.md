@@ -1,7 +1,7 @@
 ---
 title: How to Secure Tier 0
 weight: 100
-pre: "::: "
+pre: ":: "
 ---
 <!-- split into separate page all that is below -->
 ## How to start securing Tier 0:
