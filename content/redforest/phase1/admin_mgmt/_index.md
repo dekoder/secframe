@@ -16,7 +16,7 @@ With a basic understanding of the various [Administrative Accounts](adminaccount
  
 *CENTRALIZE ADMINISTRATIVE ACCOUNTS:*
 
-The location of the administrative users and groups is often overlooked. If i were to perform an audit on any random domain, there's a giant chance that I'd find administrative accounts scattered across multiple Organizational Units. 
+The location of the administrative users and groups is often overlooked. If i were to perform an audit on any random domain, there's a major chance that I'd find administrative accounts scattered across multiple Organizational Units. 
 
 > Often by accident this scattered user placement creates pathways that attackers exploit to gain higher level of privileges.
 

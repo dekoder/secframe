@@ -1,5 +1,6 @@
 ---
 title: Red Forest
+description: A full guide on what Microsoft's Red Forest (ESAE) is, and how to get started.
 weight: 5
 pre: "<b>1. </b>"
 chapter: false
