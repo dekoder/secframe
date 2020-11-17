@@ -13,7 +13,7 @@ For a full list of permissions on the default built in groups, please reference 
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-b--privileged-accounts-and-groups-in-active-directory
 
-The list of groups covered in this series, in alphabetical order:
+##  The list of groups covered in this post, in alphabetical order:
 
 - [Account operators](/redforest/phase1/adminaccounts/tier-0-admins/accountoperators)
 - [Administrators](/redforest/phase1/adminaccounts/tier-0-admins/tier0_a_da_ea)
@@ -28,6 +28,57 @@ The list of groups covered in this series, in alphabetical order:
 
 
 Each group will be defined with my everyday and very general overview. I'll list security fears related to the rights granted to the group. I'll then finish up by describing some basic recommendations to perform on the group listed and accounts added to the group.
+
+### Administrators {#adm}
+Defined:
+
+Often overlooked by auditors, this group is God-Mode. Full access to all objects on the domain.
+
+#### Danger: {#admd}
+
+- Groups or users are often added directly to this group
+- Default audits only require reporting on "Domain Admins" and often overlook this group
+
+#### Recommendation: {#admr}
+
+- Audit the group membership, starting today
+- Remove any groups nested inside this group besides: Domain Administrators and Enterprise Administrators
+- Remove any users added directly to this group
+ 
+
+### Domain Admins {#das}
+Defined: This group is nested in the administrators group (nested god mode). By default it is also listed as administrator on all workstations and servers in the domain.
+
+#### Danger: {#dasd}
+
+- Everything from the administrator list
+- Member of every computer's admin group
+
+#### Recommendation: {#dasr}
+
+- Limit this group to 5 users max
+- Admins: Get in a room to talk about who needs to be in this group. Look around the room. Identify everyone in the room at that moment. Kick everyone out of the group that is not currently in the room
+- Monitor and alert for all domain admin account activity
+ 
+
+### Enterprise Admins {#eadm}
+Defined: Forest administrators. The EA group is granted rights to affect forest wide changes: adding/removing domains, creating trusts, upgrading/raising forest levels
+
+#### Danger: {#eadmd}
+
+- This group isn't often needed after the initial setup of a simple domain
+- Can create rogue trust to compromised domain. This would provide a direct persistent path to compromise a domain
+
+#### Recommendation: {#eadmr}
+
+- Remove all users and groups from this group
+- Monitor and alert on this group's additions and removals
+
+----
+
+
+The above groups should be the groups auditors are checking. If you are planning on creating a self directed risk assessment begin your documentation with a confirmation that these groups are on your audit list.
+
 
 ### Account operators {#ao}
 
