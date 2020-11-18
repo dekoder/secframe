@@ -1,11 +1,11 @@
 +++
 title = "Privileged Access Workstations"
 description = "Ask the details you need to know to deploy PAWs in Active Directory.  Find out where to begin."
-image = 'images/pawfig2.jpg'
+image = 'images/pawfig1.jpg'
 date = 2020-11-01T15:36:24-05:00
 weight = 20
 pre = "2. "
-draft = true
+draft = false
 +++
 
 ## What is a Privileged Access Workstation - PAW
@@ -21,7 +21,9 @@ Let's dive right into what types of PAWs people use in the wild, where the objec
 
 ### Types of PAWs
 
-There are various methods that environments can work toward deploying a secure PAW environment.  Sometimes the best and most secure deployment is not possible in a short period of time.  Keeping that in mind, here are the methods I have seen deployed in various environments.  
+There are various methods that environments can work toward deploying a secure PAW environment.  
+
+Sometimes the best and most secure deployment is not possible in a short period of time.  Microsoft said Phase 1 of the RedForest that the tooling "Must be set up quickly."  Keeping speed in mind, know that there are ways to secure an environment that are not 'complete' but provide a better base of security than what people already have in place.  With that in mind, here are the methods I have seen deployed in various environments:
 
 Method 1  | Pros | Cons
 -- | -- | --
@@ -29,29 +31,42 @@ Method 1  | Pros | Cons
 
 > This isn't a good solution, but it is better than Domain Admins and Server Admins from living into workstations.
 
-![paw user keyboard own](images/pawfig2.jpg)
+![paw user keyboard own](images/pawfig4.jpg)
 
 Method 2 | Pros | Cons
 -- | -- | --
 | 2. A brand new separate laptop | Administrative credentials are immediately segregated onto a separate workstation.  This is the quickest and cheapest way to deploy and work toward a better security posture | There is still a lot of work to do.  Also an admins now has two separate workstations/laptops to lug around. |
 
-> Better than a jump box, this is not the ultimate solution. However, it's top quality is that credentials are instantly separated from a standard workstation.
+![paw user keyboard own](images/pawfig8.jpg)
+> Better than a jump box, this is not the ultimate solution. However, it's **BEST QUALITY**  is that credentials are instantly separated from a standard workstation. 
+> > _...and this is quick_
 
 Method 3 | Pros | Cons
 -- | -- | --
-| 3. A shared physical server | Administrative credentials are immediately segregated onto a separate server.  A quick way to work towards securing credential | There is still a lot of work to do.  Dependent on people going to a physical location to use a separate device |
+| 3. A shared physical server | Administrative credentials are immediately segregated onto a separate server.  A quick way to work towards securing credential | There is still a lot of work to do.   This is dependent on people going to a physical location to use a separate device |
+
 
 Method 4 | Pros | Cons
 -- | -- | --
-| 4. Dedicated hardware | Administrative credentials are immediately segregated onto a separate server.  A quick way to work towards securing credential | There is still a lot of work to do.  Dependent on people going to a physical location to use a separate device |
+| 4. A laptop for admin work, with a vm inside it for daily tasks | Administrative credentials are immediately segregated onto a separate computer.  This is a quick way to work towards securing credential | There is still a lot of full PAW configuration to do.  |
+
+![paw user keyboard own](images/pawfig10.jpg)
+
+> This is the ultimate goal.  Realize it's not easy to get here.  
+
+#### If you dont know where to start, choose method 2
+
+---
 
 
-### PAW Storage
+### PAW Rollout and OU Configuration
 
-Define a place to store the PAW machine objects and administrators that use them. 
+The next piece of work to jump into is to continued to focus on Tier 0.  It's time to take a look into securing the Tier 0 administrators and their devices they use.  If tier 0 is not secure there is not much sense in securing anything else.  
 
-1. Download the PAW script from the technet library.  
+We are going to work on: 
 
-[PAWS OU Creation Script](https://gallery.technet.microsoft.com/Privileged-Access-53a4673a)
+- Securing where the Tiered administrator user accounts reside 
+- Getting these admins onto separate workstations to get their administrative credentials off of standard workstations and servers
+- Securing where the PAWs reside
 
-For a full look at what the PAW OU script does, please see [Privileged Access Admin OU](paws_admin_ou)
+For a full look at these next steps, please see [Privileged Access Admin OU](paws_admin_ou)
