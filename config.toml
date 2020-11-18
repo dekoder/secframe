@@ -43,7 +43,7 @@ url = "https://linkedin.com/in/davidprowe/"
 weight = 25
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-bullhorn'></i> Contact"
+name = "<i class='fas fa-fw fa-bullhorn'></i> About"
 url = "/contact"
 weight = 30
 
