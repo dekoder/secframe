@@ -1,12 +1,13 @@
-+++
-title = "Privileged Access Workstations"
-description = "Ask the details you need to know to deploy PAWs in Active Directory.  Find out where to begin."
-image = 'images/pawfig1.jpg'
-date = 2020-11-01T15:36:24-05:00
-weight = 20
-pre = "2. "
-draft = false
-+++
+---
+title: "Privileged Access Workstations"
+description: "Ask the details you need to know to deploy Active Directory PAWs. Patrol privileged credentials."
+image: 'images/pawfig1.jpg'
+date: 2020-11-01T15:36:24-05:00
+weight: 20
+pre: "2. "
+draft: false
+tags: ['microsoft','security','redforest','paws']
+---
 
 ## What is a Privileged Access Workstation - PAW
 The PAWs deployment is focused to restrict privileged Active Directory tasks to dedicated workstations to protect against credential theft.  
