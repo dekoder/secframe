@@ -1,5 +1,6 @@
 ---
 title: Tiered Administration
+description: "What are the Microsoft Tiers, and who holds the keys to the kingdom"
 weight: 12
 pre: ": "
 aliases: 
@@ -9,10 +10,9 @@ aliases:
 
 ### What are tiers?
 
-Microsoft has a methodology called Tiered Administration. Microsoft Services assists many companies across the globe respond to security breaches and incidents. The best and the brightest of various Microsoft teams discussed how companies were being breached, and how Microsoft designs solutions to secure post incidents. 
- 
 To respond to incidents, Microsoft created Tiers: a method to segment an Active directory domain to protect the privileged identities. Start securing your organization, starts by segmenting users from administrators. 
- 
+
+Microsoft has a methodology called Tiered Administration. Microsoft Services assists many companies across the globe respond to security breaches and incidents. The best and the brightest of various Microsoft teams discussed how companies were being breached, and how Microsoft designs solutions to secure post incidents. 
  
 In the post [Administrative Accounts](/redforest/phase1/adminaccounts/) best practices for administrator accounts is  described in detail. After understanding the process of when a person gets a separate administrative account, understand what resources people access. for that we...
 

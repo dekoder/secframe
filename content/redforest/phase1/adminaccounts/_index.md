@@ -1,5 +1,6 @@
 +++
 title = "Admin Accounts"
+description = "Let's go into how to define an administrator account."
 weight = 10
 chapter = false
 pre = "1. "
@@ -7,8 +8,9 @@ aliases =  "/blog/4-reasons-she-needs-an-admin-account"
 +++
 
 ## What is an administrative account?
----
-#### If you are enacting change on a user, group, computer, organizational unit, or any object on a domain, you need an administrative account.
+
+An Administrator account is someone or something can can perform a change on an object. If you are enacting change on a user, group, computer, organizational unit, or any object on a domain, you need an administrative account.
+
 ---
 
 ## Where do you need to begin with administrative accounts? 
@@ -46,7 +48,7 @@ Can this person perform these computer actions?
 * Set spn of a computer
 * Set Security ACLS on a computer?
 
-##### to link - overlooked ACL Blog
+<!-- overlooked acl to link:-->
 
 ![Computer permissions](</redforest/phase1/images/Computer Permissions.jpg?classes=shadow>)
 
@@ -73,4 +75,4 @@ Can this person perform these actions on organization units or containers?
 If the person answers yes to any of the items above for users, groups, computers, or containers, then this person needs a separate admin account.
 
 
-###### To write - why a anyone in a group or connecting to certain computers also need admin accounts
+<!-- To write - why a anyone in a group or connecting to certain computers also need admin accounts -->
