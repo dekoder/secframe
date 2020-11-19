@@ -8,6 +8,7 @@
     {{ partial "favicon.html" . }}
     <title>{{ .Title }} {{ default "::" .Site.Params.titleSeparator }} {{ .Site.Title }}</title>
     {{ $assetBusting := not .Site.Params.disableAssetsBusting }}
+    {{ partial "google/analytics" . }}
     <script data-ad-client="ca-pub-6527109248747668" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link href="{{"css/nucleus.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
     <link href="{{"css/fontawesome-all.min.css" | relURL}}{{ if $assetBusting }}?{{ now.Unix }}{{ end }}" rel="stylesheet">
