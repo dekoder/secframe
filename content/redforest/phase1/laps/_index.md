@@ -6,18 +6,15 @@ date = 2020-11-03T07:36:24-05:00
 weight = 90
 +++
 
-### what is LAPS?
-## Local Admin Password Solution
+## What is LAPS? Local Admin Password Solution
 
-Laps is Microsofts deployment to remedy the issue of password reuse on local administrator accounts. 
+Laps is Microsoft's deployment to remedy the issue of password reuse on local administrator accounts. The base for LAPs is based from a github repo [Admpwd](https://github.com/GreyCorbel/admpwd). 
 
-The base for LAPs is based from a github repo [Admpwd](https://github.com/GreyCorbel/admpwd). 
+### What happens when computers have he same local password
 
-### What happens when comouters have he same local password
+Attackers love easy paths through a network or domain. Attackers don't use unique attacks. they repeat the eay they come into a network. They repeat the way they move through a network. 
 
-Attackers love easy paths through a network or domain. Attackers dont use unique attacks. they repeat the eay they come into a network. They repeat the way they move through a network. 
-
-![Phase 1 critical mitigation]
+<!-- ![Phase 1 critical mitigation] -->
 
 Creating unique and complex local passwords for computers, and rotating those password hinders an attached movement
 
