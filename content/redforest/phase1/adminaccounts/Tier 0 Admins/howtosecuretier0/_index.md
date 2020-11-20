@@ -24,3 +24,5 @@ VMware - export the administrator list. Which VMware administrator(s) have acces
 Provisioning system: provisioning account name. Users with access to the provisioning account
 
 If you need more assistance with identifying access across your organization, please reach out.
+
+{{< parentsection section="redforest" >}}

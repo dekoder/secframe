@@ -36,3 +36,5 @@ Microsoft open sourced a lot of the information on privileged account management
 2. [Admin Reporting](admin_reports)
 3. [Admin Account Object Standards](admin_standards)
 4. [Admin Maintenance](admin_maintenance)
+
+{{< parentsection section="redforest" >}}

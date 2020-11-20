@@ -71,3 +71,5 @@ We are going to work on:
 - Securing where the PAWs reside
 
 For a full look at these next steps, please see [Privileged Access Admin OU](paws_admin_ou)
+
+{{< parentsection section="redforest" >}}

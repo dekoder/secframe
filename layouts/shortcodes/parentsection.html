@@ -1,0 +1,14 @@
+{{ $section :=  .Get "section" | default "blog" }}
+{{ $title := .Get "title" | default "Back To The Top"}}
+
+
+<h4> {{$title}} </h4>
+	<ul>
+        {{- range ( where site.Sections "Section" $section ) }}
+
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{- end}}
+	</ul>
+
+
+    

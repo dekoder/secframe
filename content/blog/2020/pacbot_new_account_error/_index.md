@@ -38,6 +38,7 @@ cd installer/
 sudo pip3 install -r requirements.txt
 ```
 
+
 Next I updated the settings/local.py file with the required values per the instructions on github:
    - VPC ID
    - VPC CIDR 
@@ -59,6 +60,8 @@ Once I got into the realm of adding new accounts, I followed the instructions on
 However, no matter how long I waited for the account to show up in Pacbot, the accounts never were audited.  Jump into troubleshooting:
 
 The logs for the resource collection job is in the AWS Batch under the AWS-Data-Collector-job. There is cloudwatch logs for the job after querying the cloudwatch logs I found the following error code:
+
+{{< display_hor >}}
 
 ```
 2020-11-19 15:06:23 [main] ERROR c.t.c.p.i.file.AssetFileGenerator - {"errcode":"NO_CRED" , "account":" 6ACCOUNTNUMBER6", "Message":"Error getting credentials for account 6ACCOUNTNUMBER6" , "cause":"1 validation error detected: Value 'pic-ro- 6ACCOUNTNUMBER6' at 'roleSessionName' failed to satisfy constraint: Member must satisfy regular expression pattern: [\w+=,.@-]* (Service: AWSSecurityTokenService; Status Code: 400; Error Code: ValidationError; Request ID: 729f305c-f0f0-4604-95d6-56b6474e1a32)"}

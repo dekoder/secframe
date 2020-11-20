@@ -54,3 +54,5 @@ This reference picture above is a great place to start to understand how many Ti
 | Get an understanding on how to dive into those "other systems" that control tier 0|
 | :---: |
 | [Identify and Secure Tier 0 Services, Systems, and Hardware](howtosecuretier0)|
+
+{{< parentsection section="redforest" >}}

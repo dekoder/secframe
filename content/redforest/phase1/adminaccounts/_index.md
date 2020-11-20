@@ -76,3 +76,5 @@ If the person answers yes to any of the items above for users, groups, computers
 
 
 <!-- To write - why a anyone in a group or connecting to certain computers also need admin accounts -->
+
+{{< parentsection section="redforest" >}}

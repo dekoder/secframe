@@ -15,4 +15,8 @@ weight: 5
 * [Create Unique Local Admin Passwords for Workstations](laps/)
 * [ Create Unique Local Admin Passwords for Servers](laps/)
 
+{{ partial google/}}
 ![Steps to begin ESAE](</redforest/images/Protecting Admin Privileges 30 days.png?classes=shadow>)
+
+
+{{< parentsection section="redforest" >}}

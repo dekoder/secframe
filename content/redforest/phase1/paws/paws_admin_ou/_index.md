@@ -27,3 +27,5 @@ The location of the administrative users and groups is often overlooked. If i we
 ## Get Organized
 
 [http://aka.ms/cyberpaw](http://aka.ms/cyberpaw)
+
+{{< parentsection section="redforest" >}}

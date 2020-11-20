@@ -72,7 +72,9 @@ There are two GPOs to configure in the domain: One for servers. One for workstat
 ----
 ### Tier 2 LAPS GPO
 Here's an outline of what the LAPS GPO should look like for workstations, tier 2 devices.
-![tier 1 laps](images/laps1.png)
+1. Create Two GPOs at the root of the domain:
+  1. One for 'LAPS Workstation' 
+  1. One for 'LAPS Server'
 
 The settings are outlined as follows  
 Setting Name  | Suggested Setting
@@ -113,3 +115,5 @@ Per the pdf linked above:
 Congratulations. Microsoft LAPS is now successfully deployed in the domain.
 
 > Pictures from this post are from the Microsoft PDF linked at the top of the page.
+
+{{< parentsection section="redforest" >}}

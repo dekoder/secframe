@@ -62,3 +62,4 @@ Since there are three administrator tiers, begin with understanding there is thr
 
 To get started with deploying the tiers, start with the biggest most impactful item that secures the largest section of the domain, and as a bonus, it takes the least amount of time: [Tier 0; The Domain Administrators](domainadmin)
 
+{{< parentsection section="redforest" >}}

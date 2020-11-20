@@ -86,3 +86,4 @@ The above groups should be the groups auditors are checking. If you are planning
 
 These groups listed are the first groups that attackers are attempting to compromise. If attackers are able to quickly and efficiently compromise these groups, they have an immediate return on investment. The attacker wins. You must begin a security plan by securing these groups.
 
+{{< parentsection section="redforest" >}}
