@@ -42,3 +42,4 @@ Item #2 is what LAPS targets to remediate. The compromising of an entire compute
 |  AdmPwd | [AdmPwd project](https://github.com/GreyCorbel/admpwd) | Not yet Written |
 | AdmPwd.E | [AdmPwd.E](https://github.com/GreyCorbel/admpwd-e) | Not yet Written |
 
+{{< parentsection section="redforest" >}}

@@ -105,3 +105,6 @@ https://www.petri.com/keep-active-directory-secure-using-privileged-access-works
  
 
 If you need more assistance with identifying access across your organization, please reach out.
+
+
+{{< parentsection section="redforest" >}}

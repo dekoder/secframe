@@ -191,3 +191,5 @@ Defined: members of this group can administer servers in the domain
 
 > The common goal here for all these built in groups is to empty the group when possible. Remove all users. Remove all groups nested inside these groups. Once completed your AD environment will be in a much more secure state.
 
+
+{{< parentsection section="redforest" >}}
