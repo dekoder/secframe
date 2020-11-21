@@ -1,5 +1,8 @@
 ---
 title: Phase 1 The First 30 Days
+description: "Active directory security steps to take in 30 days"
+image: "images/Tier 0 Observed Systems.png"
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
 weight: 5
 ---
 

@@ -2,6 +2,8 @@
 title: Admin OU
 weight: 25
 pre: ": "
+description: "Where do you start to begin to add security into Active Directory"
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
 ---
 Today's topic to answer:
 

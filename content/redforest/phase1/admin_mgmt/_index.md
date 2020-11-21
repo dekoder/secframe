@@ -2,7 +2,9 @@
 title: "Administrator Management"
 weight:  200
 chapter: true
+description: "Where do you start with securing active directory? Security starts with an admin OU."
 pre: "- Bonus Content: "
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
 aliases: 
     - /blog/why-arent-your-administrators-in-one-place/
 ---

@@ -3,6 +3,7 @@ title: Tiered Administration
 description: "What are the Microsoft Tiers, and who holds the keys to the kingdom"
 weight: 12
 pre: ": "
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
 aliases: 
     - /blog/what-are-tiers-and-who-holds-the-keys-to-the-kingdom
 ---
@@ -55,9 +56,9 @@ Since there are three administrator tiers, begin with understanding there is thr
 
 | Tier # | Administrator Type |
 | ---: | :--- |
-| 0 | [Domain Admin](domainadmins) |
-| 1 | [Server Admin](serveradmins) |
-| 2 | [Workstation Admin](workstationadmins) |
+| 0 | [Domain Admin](Tier_0_Admins) |
+| 1 | [Server Admin](tier_1_admins) |
+| 2 | [Workstation Admin](tier_2_admins) |
 
 
 To get started with deploying the tiers, start with the biggest most impactful item that secures the largest section of the domain, and as a bonus, it takes the least amount of time: [Tier 0; The Domain Administrators](domainadmin)

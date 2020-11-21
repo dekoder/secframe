@@ -6,7 +6,7 @@ date: 2020-11-01T15:36:24-05:00
 weight: 30
 pre: ": "
 draft: true
-tags: ['microsoft','security','redforest','paws']
+tags: ['microsoft','security','redforest','paws',"Active Directory"]
 ---
 
 1. Download the PAW script from the technet library. [PAWS OU Creation Script](https://gallery.technet.microsoft.com/Privileged-Access-53a4673a)

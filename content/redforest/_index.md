@@ -1,10 +1,11 @@
 ---
 title: Red Forest
-description: A full guide on what Microsoft's Red Forest (ESAE) is, and how to get started.
+description: A full guide on Microsoft's Admin Red Forest (ESAE), and how to get started.
 weight: 5
 pre: "<b>1. </b>"
 chapter: false
-tags: ["ESAE", "Microsoft"]
+image: "images/ESAE Phases Layout.png"
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
 aliases:
     - /blog/what-is-microsoft-esae-and-red-forest/
     - /blog/what-is-microsoft-esae-and-red-forest
@@ -69,7 +70,7 @@ The basic outline for starting the deployment buckets the security items into se
 ### Where to begin?
 ---
 
-| I'd like to begin the journey. Let's get started with phase 1. |
+| I'd like to begin the journey. I want to understand the terms and prep my domain. Let's get started with phase 1. |
 | :---: |
 | [Take me to phase 1](phase1/)|
 

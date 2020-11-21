@@ -2,6 +2,8 @@
 title: How to Secure Tier 0
 weight: 100
 pre: ":: "
+description: "Securing the identity of everyone in with control of your domain begins here."
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
 ---
 <!-- split into separate page all that is below -->
 ## How to start securing Tier 0:

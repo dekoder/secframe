@@ -2,6 +2,8 @@
 title: Account Operators
 weight: 90
 pre: ":: "
+description: "The many reasons account operators is a tier 0 group."
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
 aliases: 
     - /blog/account-operators-what-can-they-control
 ---
