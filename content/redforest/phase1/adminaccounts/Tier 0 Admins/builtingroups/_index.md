@@ -2,6 +2,8 @@
 title: Built-In Groups
 weight: 20
 pre: ":: "
+tags: ["ESAE", "Microsoft","Active Directory","Security"]
+description: "Active directory security doesn't stop with Domain Administrators. Learn about more groups to watch here"
 aliases: 
     - /blog/forget-me-not-list-privileged-groups-to-audit-today
 ---
