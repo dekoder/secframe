@@ -16,3 +16,5 @@ weight: 15
 * Shielded VMs for Virtual DCs
 
 ![Steps to begin ESAE Phase3](</redforest/images/Protecting Admin Privileges Beyond 90.png?classes=shadow>)
+
+{{< parentsection section="redforest" >}}
