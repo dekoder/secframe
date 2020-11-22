@@ -1,8 +1,8 @@
 ---
 title: "Privileged Access Workstations"
 description: "Ask the details you need to know to deploy Active Directory PAWs. Patrol privileged credentials."
-image: 'images/pawfig1.jpg'
-tags: ["ESAE", "Microsoft","Active Directory","Security","PAWS"]]
+image: "images/pawfig1.jpg"
+tags: ["ESAE", "Microsoft","Active Directory","Security","PAWS"]
 date: 2020-11-01T15:36:24-05:00
 weight: 20
 pre: "2. "

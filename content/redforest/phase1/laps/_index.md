@@ -1,7 +1,7 @@
 +++
 title = "LAPS Servers & Workstations"
 description = "Microsoft's secure solution for password reuse on a domain"
-tags: ["ESAE", "Microsoft","Active Directory","Security","LAPS"]
+tags = ["ESAE", "Microsoft","Active Directory","Security","LAPS"]
 pre = "3. "
 date = 2020-11-03T07:36:24-05:00
 weight = 90

@@ -1,7 +1,7 @@
 +++
 title = "Admin Accounts"
 description = "Let's go into how to define an administrator account."
-tags: ["ESAE", "Microsoft","Active Directory","Security"]
+tags = ["ESAE", "Microsoft","Active Directory","Security"]
 weight = 10
 chapter = false
 pre = "1. "

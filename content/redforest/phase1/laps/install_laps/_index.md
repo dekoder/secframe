@@ -1,12 +1,13 @@
 ---
-title: Install and Configure LAPS
-description: How to install laps and have unique administrator passwords on an Active Directory Domain.
+title: "Install and Configure LAPS"
+description: "How to install laps and have unique administrator passwords on an Active Directory Domain"
 weight: 10
-date: 2020-11-12T16:47:17-04:00
+date: '2020-11-12T16:47:17-04:00'
 chapter: false
 draft: false
 tags: ["ESAE", "Microsoft","Active Directory","Security","LAPS"]
 ---
+
 
 ## How to install LAPS
 
