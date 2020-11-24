@@ -17,3 +17,5 @@ weight: 10
 * Attack Detection
 
 ![Steps to begin ESAE Phase2](</redforest/images/Protecting Admin Privileges 90 Days.png?classes=shadow>)
+
+{{< parentsection section="redforest" >}}

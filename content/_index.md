@@ -1,5 +1,5 @@
 ---
-title: "Active Directory And AWS Security Frameworks'
+title: "Active Directory And AWS Security Frameworks"
 description: "Dive into Microsoft Active Directory security with red first and AWS best practices"
 image: "secframe_logos/11_1_20_logo_large.png"
 ---
