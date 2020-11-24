@@ -30,7 +30,7 @@ Method 1  | Pros | Cons
 -- | -- | --
 | 1. Server Jumpbox for Administrative Use | Cached Credentials are separated from the workstations | Passwords are typed on a workstation to get to the jumpbox.  If the workstation is compromised, a keylogger can steal the server password. 
 
-> This isn't a good solution, but it is better than Domain Admins and Server Admins from living into workstations.
+> This isn't a good solution, but it is better than Domain Admins and Server Admins from being used on standard workstations.
 
 ![paw user keyboard own](images/pawfig4.jpg)
 
@@ -53,7 +53,7 @@ Method 4 | Pros | Cons
 
 ![paw user keyboard own](images/pawfig10.jpg)
 
-> This is the ultimate goal.  Realize it's not easy to get here.  
+> This is the ultimate goal.  Please realize it's not easy to get here.  
 
 #### If you dont know where to start, choose method 2
 
@@ -62,14 +62,11 @@ Method 4 | Pros | Cons
 
 ### PAW Rollout and OU Configuration
 
-The next piece of work to jump into is to continued to focus on Tier 0.  It's time to take a look into securing the Tier 0 administrators and their devices they use.  If tier 0 is not secure there is not much sense in securing anything else.  
+The next piece of work to jump into is to continued to focus on Tier 0.  It's time to take a look into securing the Tier 0 administrators and their devices they use.  If tier 0 is not secure there is not much sense in securing anything else.  We are going to work on securing where the Tiered administrator user accounts reside, make the users use these separate admin workstations, securing where the PAWs reside
 
-We are going to work on: 
+Begin Here: 
 
-- Securing where the Tiered administrator user accounts reside 
-- Getting these admins onto separate workstations to get their administrative credentials off of standard workstations and servers
-- Securing where the PAWs reside
-
-For a full look at these next steps, please see [Privileged Access Admin OU](paws_admin_ou)
+{{% children description="true" %}}
+{{% /children %}}
 
 {{< parentsection section="redforest" >}}
