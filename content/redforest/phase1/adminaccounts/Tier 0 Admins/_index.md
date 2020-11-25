@@ -35,7 +35,7 @@ This file is the one thing that rules the domain. People that control this file 
 
 ## Secure Tier 0 Systems in an Environment 
 
-### Access to Observed Systems
+### Access to Observed Systems {#observed}
 Access to the ntds file can come on many different manners: applications installed the servers, agents or services running on the servers, scheduled task or scheduled jobs, hard disk administrators, backup administrators. The list goes on.
 
 ![Secframe.com Microsoft Tiers](</redforest/phase1/images/Tier 0 Observed Systems.png?classes=shadow&width=40pc>)
