@@ -236,20 +236,20 @@ graph LR
         1 --> 11(Tier 1)
         1 --> 12(Tier 2)
     end
-    subgraph 1g0[Tier 0 OUs]
+    subgraph 10g[Tier 0 OUs]
     10 --> B0A0(Accounts)
     10 --> B0D0(Devices)
     10 --> B0G0(Groups)
     10 --> B0SA0(Service Accounts)
     10 --> B0T0S0(Tier 0 Servers)
     end
-    subgraph 1g1[Tier 1 OUs]
+    subgraph 11g[Tier 1 OUs]
     11 --> B0A1(Accounts)
     11 --> B0D1(Devices)
     11 --> B0G1(Groups)
     11 --> B0SA1(Service Accounts)
     end
-    subgraph 1g2[Tier 2 OUs]
+    subgraph 12g[Tier 2 OUs]
     12 --> B0A2(Accounts)
     12 --> B0D2(Devices)
     12 --> B0G2(Groups)
@@ -287,14 +287,127 @@ style 6g fill:transparent,stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
 ```
 ---
 
-### Sub OUs under Groups, Tier 1, Workstations and User Accounts {#grps}
+### Sub OUs under Groups, Tier 1, Workstations and User Accounts {#subsous}
 
-#### Top Level OU: Groups Sub OUs
 {{% notice info %}}
 I will be collapsing the admin OU for the next chart.  For reference on the admin ou, please click on the box in the chart.
 {{% /notice %}}
-Sub OU Name | Description | Created with the following code:
+
+#### Top Level OU: Groups Sub OUs {#grpsous}
+
+Groups OU Sub OUs Name | Description | Created with the following code:
 --- | --- | ---
 Security Groups | Groups that provide access to resources | `New-ADOrganizationalUnit -Name "Security Groups" -Path ("OU=Groups,$sDSE")`
 Distribution Groups | Place for all email distribution groups | `New-ADOrganizationalUnit -Name "Distribution Groups" -Path ("OU=Groups,$sDSE")`
-Contacts Accounts | Contains objects with no security permissions.  External Email users | `New-ADOrganizationalUnit -Name "Contacts" -Path ("OU=Groups,$sDSE")`
+Contacts | Contains objects with no security permissions.  External Email users | `New-ADOrganizationalUnit -Name "Contacts" -Path ("OU=Groups,$sDSE")`
+
+#### Top Level OU: Tier 1 Servers Sub OUs {#tier1sub}
+
+Tier 1 Servers OU Sub OUs Name | Description | Created with the following code
+--- | --- | ---
+Application | Servers that run necessary applications on the domain. (.Net, Citrix, task servers etc) |  `New-ADOrganizationalUnit -Name "Application" -Path ("OU=Tier 1 Servers,$sDSE")`
+Collaboration | I honestly think Microsoft just made this one up. It makes no sense. Feel free to delete things that don't make sense in you environment |   `New-ADOrganizationalUnit -Name "Collaboration" -Path ("OU=Tier 1 Servers,$sDSE")`
+Database | Servers hosting database services | `New-ADOrganizationalUnit -Name "Database" -Path ("OU=Tier 1 Servers,$sDSE")`
+Messaging | Servers that host cross team communication apps on the domain | `New-ADOrganizationalUnit -Name "Messaging" -Path ("OU=Tier 1 Servers,$sDSE")`
+Staging | Dev/Test OU for testing new deployments |`New-ADOrganizationalUnit -Name "Staging" -Path ("OU=Tier 1 Servers,$sDSE")`
+
+#### Top Level OU: Workstations Sub OUs {#wkssub}
+
+Workstations OU Sub OUs Name | Description | Created with the following code
+--- | --- | ---
+Desktops | Machines that plug into a wall and don't move from their location very often | `New-ADOrganizationalUnit -Name "Desktops" -Path ("OU=Workstations,$sDSE")`
+Kiosks | SSO machines. Or Workstations on wheels |`New-ADOrganizationalUnit -Name "Kiosks" -Path ("OU=Workstations,$sDSE")`
+Laptops | laptops... |`New-ADOrganizationalUnit -Name "Laptops" -Path ("OU=Workstations,$sDSE")`
+Staging | Dev/Test OU for testing new deployments |`New-ADOrganizationalUnit -Name "Staging" -Path ("OU=Workstations,$sDSE")`
+
+#### Top Level OU: User Accounts Sub OUs {#usersub}
+
+User Accounts OU Sub OUs Name | Description | Created with the following code
+--- | --- | ---
+Enabled Users | Standard accounts for people that have access to log into systems | `New-ADOrganizationalUnit -Name "Enabled Users" -Path ("OU=User Accounts,$sDSE")`
+Disabled Users | Standard user accounts that no longer have access to the domain |  `New-ADOrganizationalUnit -Name "Disabled Users" -Path ("OU=User Accounts,$sDSE")`
+
+----
+
+The full secure Active Directory PAW Admin OU structure laid out is:
+
+```mermaid
+graph LR
+    root[(DomainRoot.com)] --> 1{{Admin}}
+    root --> 2{{Groups}}
+    root --> 3{{Tier 1 Servers}}
+    root --> 4{{Workstations}}
+    root --> 5{{User Accounts}}
+    root --> 6{{Computer Quarantine}}
+    subgraph 1g[The PAW OUs.]
+      1
+        1 --> 10(Tier 0)
+        1 --> 11(Tier 1)
+        1 --> 12(Tier 2)
+    end
+    subgraph 10g[Tier 0 OUs]
+    10 --> B0A0(Accounts)
+    10 --> B0D0(Devices)
+    10 --> B0G0(Groups)
+    10 --> B0SA0(Service Accounts)
+    10 --> B0T0S0(Tier 0 Servers)
+    end
+    subgraph 11g[Tier 1 OUs]
+    11 --> B0A1(Accounts)
+    11 --> B0D1(Devices)
+    11 --> B0G1(Groups)
+    11 --> B0SA1(Service Accounts)
+    end
+    subgraph 12g[Tier 2 OUs]
+    12 --> B0A2(Accounts)
+    12 --> B0D2(Devices)
+    12 --> B0G2(Groups)
+    12 --> B0SA2(Service Accounts)
+    end
+    subgraph 2g[All Non Admin Groups on Domain.]
+      2 --> 20(Security Groups)
+      2 --> 21(Distribution Groups)
+      2 --> 22(Contacts)
+    end
+    subgraph 3g[Data and App Servers.]
+      3 --> 30(Application)
+      3 --> 31(Collaboration)
+      3 --> 32(Messaging)
+      3 --> 33(Database)
+      3 --> 34(Staging)
+    end
+    subgraph 4g[Standard domain joined computers]
+      4 --> 40(Desktops)
+      4 --> 41(Kiosks)
+      4 --> 42(Laptops)
+      4 --> 43(Staging)
+    end
+    subgraph 5g[Standard User Accounts.]
+      5 --> 50(Enabled Users)
+      5 --> 51(Disabled Users)
+    end
+    subgraph 6g[New Default Computer OU.]
+      6
+    end
+    
+    click 1 "/redforest/phase1/paws/paws_admin_ou/#tierous"
+    click 10 "/redforest/phase1/paws/paws_admin_ou/#t0ous"
+    click 11 "/redforest/phase1/paws/paws_admin_ou/#t1ous"
+    click 12 "/redforest/phase1/paws/paws_admin_ou/#t2ous"
+linkStyle 0,1,2,3,4,5,6 stroke-width:1px;
+
+style 1g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
+style 10g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
+style 11g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
+style 12g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
+style 2g stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
+style 3g stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
+style 4g stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
+style 5g stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
+style 6g stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
+
+```
+
+{{% notice info %}}
+Keep in mind that OU setup configured zero permissions. This is just the start of organization that will lead to permissions management
+{{% /notice %}}
