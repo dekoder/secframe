@@ -134,7 +134,7 @@ Tier 2 | Holds all Tier 2 users, service accounts, groups, devices (PAWS) **No W
 
 ---
 
-The Active Directory Secure OU structure is now modified to:
+The Active Directory Secure OU structure with the tier OUs is now modified to:
 
 ```mermaid
 graph LR
@@ -169,6 +169,10 @@ graph LR
     click 10 "/redforest/phase1/paws/paws_admin_ou/#t0ous"
     click 11 "/redforest/phase1/paws/paws_admin_ou/#t1ous"
     click 12 "/redforest/phase1/paws/paws_admin_ou/#t2ous"
+    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous
+    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub
+    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub
+    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub
 
 linkStyle 0,1,2,3,4,5,6 stroke-width:1px;
 
@@ -275,6 +279,10 @@ graph LR
     click 10 "/redforest/phase1/paws/paws_admin_ou/#t0ous"
     click 11 "/redforest/phase1/paws/paws_admin_ou/#t1ous"
     click 12 "/redforest/phase1/paws/paws_admin_ou/#t2ous"
+    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous
+    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub
+    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub
+    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub
 linkStyle 0,1,2,3,4,5,6 stroke-width:1px;
 
 style 1g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
@@ -394,6 +402,10 @@ graph LR
     click 10 "/redforest/phase1/paws/paws_admin_ou/#t0ous"
     click 11 "/redforest/phase1/paws/paws_admin_ou/#t1ous"
     click 12 "/redforest/phase1/paws/paws_admin_ou/#t2ous"
+    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous
+    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub
+    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub
+    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub
 linkStyle 0,1,2,3,4,5,6 stroke-width:1px;
 
 style 1g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
