@@ -1,16 +1,16 @@
 ---
-title: "Tiered OUs and Admin OU"
-description: "What is the administrative OU?  How to begin with Red Forest PAWs. Patrol privileged credentials"
-image: 'images/pawfig2.jpg'
+title: "Tiered OUs / The Admin OU"
+description: "What is the administrative OU?  How to begin the Red Forest PAW. Patrol privileged credentials"
+image: 'images/adminou.png'
 date: 2020-11-01T15:36:24-05:00
 weight: 30
 pre: ": "
-draft: true
+draft: false
 tags: ['microsoft','security','redforest','paws',"Active Directory"]
 disableMermaid: false
 ---
 
-## Begin work towards the ESAE
+## Begin work towards the Red Forest
 
 With a base understanding of tiers, administrators, unique passwords for computers and a brief definition of why a privileged access workstation is needed for Active Directory Security, it's time to start investing time into making changes in the environment. 
 
@@ -24,23 +24,27 @@ The zip linked above on the technet article have three scripts with three specif
 
 Script | Purpose
 --- | ---
-Create-pawOU | Set up new OU for tiered administration
-Create-pawGroups |  Import groups.csv to create a sample tiered administrator set
-Set-PAWOUdelegation | Use the groups above and set the proper delegation on the new OUs created
+| 1. Create-pawOU | Set up new OU for tiered administration
+| 2. Create-pawGroups |  Import groups.csv to create a sample tiered administrator set
+| 3. Set-PAWOUdelegation | Use the groups above and set the proper delegation on the new OUs created
 
 > Beginning to deploy Active Directory security is as easy as 1, 2, 3
 1. Create OUs
 1. Create Groups
 1. Push delegation
 
-#### Create-PAWOU OU Structure {#oustructure}
-The Create-pawou script sets up an OU structure to allow administrative objects to be separate and secure from standard AD objects.  The Script goes through steps to set up the following structure:
+#### Administrative PAW OU Structure {#oustructure}
+The Create-PAWOU script sets up an OU structure to allow administrative objects to be separate and secure from standard AD objects.  The Script goes through steps to set up the following structure:
 
 - [Create OUs](#createous)
     - [Admin Base OU](#adminous)
         - [Tiered Base OUs](#tierous)
             - [Sub OUs under Tiers](#tiersubs)
+    - [Non Admin OUs](#grpsous)
+        - [Sub OUs]
 
+
+[Admin OU Drawn Out](#aou_done)
 
 ---
 
@@ -169,10 +173,10 @@ graph LR
     click 10 "/redforest/phase1/paws/paws_admin_ou/#t0ous"
     click 11 "/redforest/phase1/paws/paws_admin_ou/#t1ous"
     click 12 "/redforest/phase1/paws/paws_admin_ou/#t2ous"
-    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous
-    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub
-    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub
-    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub
+    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous"
+    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub"
+    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub"
+    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub"
 
 linkStyle 0,1,2,3,4,5,6 stroke-width:1px;
 
@@ -279,10 +283,10 @@ graph LR
     click 10 "/redforest/phase1/paws/paws_admin_ou/#t0ous"
     click 11 "/redforest/phase1/paws/paws_admin_ou/#t1ous"
     click 12 "/redforest/phase1/paws/paws_admin_ou/#t2ous"
-    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous
-    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub
-    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub
-    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub
+    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous"
+    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub"
+    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub"
+    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub"
 linkStyle 0,1,2,3,4,5,6 stroke-width:1px;
 
 style 1g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
@@ -297,10 +301,6 @@ style 6g fill:transparent,stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
 
 ### Sub OUs under Groups, Tier 1, Workstations and User Accounts {#subsous}
 
-{{% notice info %}}
-I will be collapsing the admin OU for the next chart.  For reference on the admin ou, please click on the box in the chart.
-{{% /notice %}}
-
 #### Top Level OU: Groups Sub OUs {#grpsous}
 
 Groups OU Sub OUs Name | Description | Created with the following code:
@@ -313,41 +313,42 @@ Contacts | Contains objects with no security permissions.  External Email users 
 
 Tier 1 Servers OU Sub OUs Name | Description | Created with the following code
 --- | --- | ---
-Application | Servers that run necessary applications on the domain. (.Net, Citrix, task servers etc) |  `New-ADOrganizationalUnit -Name "Application" -Path ("OU=Tier 1 Servers,$sDSE")`
-Collaboration | I honestly think Microsoft just made this one up. It makes no sense. Feel free to delete things that don't make sense in you environment |   `New-ADOrganizationalUnit -Name "Collaboration" -Path ("OU=Tier 1 Servers,$sDSE")`
-Database | Servers hosting database services | `New-ADOrganizationalUnit -Name "Database" -Path ("OU=Tier 1 Servers,$sDSE")`
-Messaging | Servers that host cross team communication apps on the domain | `New-ADOrganizationalUnit -Name "Messaging" -Path ("OU=Tier 1 Servers,$sDSE")`
-Staging | Dev/Test OU for testing new deployments |`New-ADOrganizationalUnit -Name "Staging" -Path ("OU=Tier 1 Servers,$sDSE")`
+Application | Servers that run necessary applications on the domain. (.Net, Citrix, task servers etc) | `New-ADOrganizationalUnit -Name "Application" -Path ("OU=Tier 1 Servers,$sDSE")`
+Collaboration | I honestly think Microsoft just made this one up. It makes no sense. Feel free to delete things that don't make sense in you environment |  `New-ADOrganizationalUnit -Name "Collaboration" -Path ("OU=Tier 1 Servers,$sDSE")`
+Database | Servers hosting database services | `New-ADOrganizationalUnit -Name "Database" -Path ("OU=Tier 1 Servers,$sDSE")`
+Messaging | Servers that host cross team communication apps on the domain |  `New-ADOrganizationalUnit -Name "Messaging" -Path ("OU=Tier 1 Servers,$sDSE")`
+Staging | Dev/Test OU for testing new deployments | `New-ADOrganizationalUnit -Name "Staging" -Path ("OU=Tier 1 Servers,$sDSE")`
 
 #### Top Level OU: Workstations Sub OUs {#wkssub}
 
 Workstations OU Sub OUs Name | Description | Created with the following code
 --- | --- | ---
-Desktops | Machines that plug into a wall and don't move from their location very often | `New-ADOrganizationalUnit -Name "Desktops" -Path ("OU=Workstations,$sDSE")`
-Kiosks | SSO machines. Or Workstations on wheels |`New-ADOrganizationalUnit -Name "Kiosks" -Path ("OU=Workstations,$sDSE")`
-Laptops | laptops... |`New-ADOrganizationalUnit -Name "Laptops" -Path ("OU=Workstations,$sDSE")`
-Staging | Dev/Test OU for testing new deployments |`New-ADOrganizationalUnit -Name "Staging" -Path ("OU=Workstations,$sDSE")`
+Desktops | Machines that plug into a wall and don't move from their location very often |  `New-ADOrganizationalUnit -Name "Desktops" -Path ("OU=Workstations,$sDSE")`
+Kiosks | SSO machines. Or Workstations on wheels | `New-ADOrganizationalUnit -Name "Kiosks" -Path ("OU=Workstations,$sDSE")`
+Laptops | laptops... | `New-ADOrganizationalUnit -Name "Laptops" -Path ("OU=Workstations,$sDSE")`
+Staging | Dev/Test OU for testing new deployments | `New-ADOrganizationalUnit -Name "Staging" -Path ("OU=Workstations,$sDSE")`
 
 #### Top Level OU: User Accounts Sub OUs {#usersub}
 
 User Accounts OU Sub OUs Name | Description | Created with the following code
 --- | --- | ---
-Enabled Users | Standard accounts for people that have access to log into systems | `New-ADOrganizationalUnit -Name "Enabled Users" -Path ("OU=User Accounts,$sDSE")`
-Disabled Users | Standard user accounts that no longer have access to the domain |  `New-ADOrganizationalUnit -Name "Disabled Users" -Path ("OU=User Accounts,$sDSE")`
+Enabled Users | Standard accounts for people that have access to log into systems |  `New-ADOrganizationalUnit -Name "Enabled Users" -Path ("OU=User Accounts,$sDSE")`
+Disabled Users | Standard user accounts that no longer have access to the domain |  `New-ADOrganizationalUnit -Name "Disabled Users" -Path ("OU=User Accounts,$sDSE")`
 
 ----
+## Full Admin OU Structure {#aou_done}
 
 The full secure Active Directory PAW Admin OU structure laid out is:
 
 ```mermaid
-graph LR
+graph TD
     root[(DomainRoot.com)] --> 1{{Admin}}
     root --> 2{{Groups}}
     root --> 3{{Tier 1 Servers}}
     root --> 4{{Workstations}}
     root --> 5{{User Accounts}}
     root --> 6{{Computer Quarantine}}
-    subgraph 1g[The PAW OUs.]
+    subgraph 1g[The Privileged Access OUs.]
       1
         1 --> 10(Tier 0)
         1 --> 11(Tier 1)
@@ -402,10 +403,10 @@ graph LR
     click 10 "/redforest/phase1/paws/paws_admin_ou/#t0ous"
     click 11 "/redforest/phase1/paws/paws_admin_ou/#t1ous"
     click 12 "/redforest/phase1/paws/paws_admin_ou/#t2ous"
-    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous
-    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub
-    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub
-    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub
+    click 2 "/redforest/phase1/paws/paws_admin_ou/#grpsous"
+    click 3 "/redforest/phase1/paws/paws_admin_ou/#tier1sub"
+    click 4 "/redforest/phase1/paws/paws_admin_ou/#wkssub"
+    click 5 "/redforest/phase1/paws/paws_admin_ou/#usersub"
 linkStyle 0,1,2,3,4,5,6 stroke-width:1px;
 
 style 1g fill:transparent,stroke:#323232,stroke-width:1px,stroke-dasharray:5;
@@ -421,5 +422,9 @@ style 6g stroke:#E5E5E5,stroke-width:1px,stroke-dasharray:5;
 ```
 
 {{% notice info %}}
-Keep in mind that OU setup configured zero permissions. This is just the start of organization that will lead to permissions management
+Keep in mind that this OU configuration has zero permissions applied to it. This is just the start of organization that will lead to permissions management.
 {{% /notice %}}
+
+
+
+{{< parentsection section="redforest" >}}
